@@ -1,0 +1,26 @@
+@media (max-width: 576px) {
+    .sidebar-div {
+        display: none;
+    }
+}
+
+.sidebar {
+    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.nav-link:hover {
+    background-color: #bfbfbf;
+}
+.sidebar div {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    display: block;
+}
+
+.body-text {
+    margin-left: 150px;
+    font-size: 18px;
+}
