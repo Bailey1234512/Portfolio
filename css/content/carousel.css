@@ -1,0 +1,22 @@
+.slick-slider .slick-slide {
+  width: 800px;
+  height: 600px;
+  display: block;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  text-align: center;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  background-color: white;
+  color: black; }
+
+.slick-slider .slick-slide img {
+  object-fit: cover;
+  object-position: center;
+  padding: auto;
+  margin: auto;
+  height: 95%;
+  width: 95%;
+  border-radius: 15px; }
+
+/*# sourceMappingURL=carousel.css.map */

@@ -1,3 +1,5 @@
+
+/* Sticky Sidebar */
 .sticky {
     position: relative;
     position: -webkit-sticky;
@@ -5,6 +7,7 @@
     top: 0;
 }
 
+/* Main Image */
 .hero-img {
     background-image: url("../img/jonatan-pie-3l3RwQdHRHg-unsplash.jpg");
     background-color: #cccccc;
@@ -15,6 +18,7 @@
     position: relative;
 }
 
+/* Main Image Text */
 .hero-text {
     text-align: center;
     position: absolute;
@@ -23,8 +27,9 @@
     transform: translate(-50%, -50%);
     color: white !important;
     filter: brightness(100%);
-}
+  }
 
+  /* Main Image on Non-front Page's*/
 .bannerimg {
     background-color: #cccccc;
     height: 200px;
@@ -34,6 +39,9 @@
     position: relative;
     filter: brightness(75%);
 }
+
+
+
 
 .project-list {
     margin-top: 30px;
