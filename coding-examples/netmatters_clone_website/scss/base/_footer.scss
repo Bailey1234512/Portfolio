@@ -1,0 +1,229 @@
+footer {
+	font-size: 13px;
+	font-family: Poppins, sans-serif;
+	background-color: $bunting;
+	display: block;
+
+	color: $white;
+
+
+	h4{
+		margin: 25px 0 ;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0 0 10px 0;;
+		margin: 0;
+		min-width: 225px;
+	}
+
+	a {
+		padding: 0;
+	}
+
+	a:link {
+		color: $white;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	a:visited {
+		color: $white;
+	}
+
+	a:active {
+		color: $black;
+	}
+
+	.footer-row {
+		.services,
+		.offices {
+			padding: 0px;
+			margin: 0px;
+		}
+
+		.service,
+		.office {
+			margin: 0px;
+			padding: 0px;
+		}
+	}
+
+	.bottom {
+		align-items: center;
+		margin: 0px;
+		width: 100%;
+		outline: none;
+		border-top: 1px solid $white;
+		padding: 5px 0 10px 0;
+		position: relative;
+
+		ul {
+			list-style: none;
+			padding: 0 0 10px 0;;
+			margin: 0;
+			min-width: 60px;
+		}
+		.col-8{
+			padding: 0px;
+		}
+		.license {
+			color: $white;
+			box-sizing: border-box;
+			text-decoration: none;
+			display: flex;
+			span {
+				margin: 0 5px 0 5px;
+			}
+		}
+
+		.social-media {
+			position: absolute;
+			right: 0;
+			display: flex;
+			justify-content: end;
+			color: white;
+			opacity: 1;
+			width: 140px;
+			height: 40px;
+			font-size: 17px;
+
+			a {
+				padding: 0;
+				span {
+					padding: 10px;
+				}
+			}
+
+			.facebook {
+				padding: 0;
+				height: auto;
+				width: auto;
+
+				.icon {
+					height: auto;
+					width: auto;
+					border-radius: 50%;
+					color: white;
+					box-sizing: border-box;
+					text-align: center;
+					vertical-align: middle;
+					padding: 10px 10px;
+				}
+			}
+			.facebook:hover {
+				padding: 0;
+				height: auto;
+				width: auto;
+				.icon:hover {
+					height: auto;
+					width: auto;
+					background-color: #3b5998 !important;
+					border-radius: 50%;
+					box-sizing: border-box;
+					text-align: center;
+					vertical-align: middle;
+					padding: 10px 10px;
+				}
+			}
+
+			.twitter {
+				padding: 0;
+				height: auto;
+				width: auto;
+				.icon {
+					height: auto;
+					width: auto;
+					border-radius: 50%;
+					color: white;
+					box-sizing: border-box;
+					text-align: center;
+					vertical-align: middle;
+					padding: 10px 10px;
+				}
+			}
+			.twitter:hover {
+				padding: 0;
+				height: auto;
+				width: auto;
+				.icon:hover {
+					height: auto;
+					width: auto;
+					background-color: #00aced !important;
+					border-radius: 50%;
+					box-sizing: border-box;
+					text-align: center;
+					vertical-align: middle;
+					padding: 10px 10px;
+				}
+			}
+
+			.isntagram {
+				padding: 0;
+				height: auto;
+				width: auto;
+				.icon {
+					height: auto;
+					width: auto;
+					border-radius: 50%;
+					color: white;
+					box-sizing: border-box;
+					text-align: center;
+					vertical-align: middle;
+					padding: 10px 10px;
+				}
+			}
+			.instagram:hover {
+				padding: 0;
+				height: auto;
+				width: auto;
+				.icon:hover {
+					height: auto;
+					width: auto;
+					background-color: #d93175 !important;
+					border-radius: 50%;
+					box-sizing: border-box;
+					text-align: center;
+					vertical-align: middle;
+					padding: 10px 10px;
+				}
+			}
+
+			.linkedin {
+				padding: 0;
+				height: auto;
+				width: auto;
+				.icon {
+					height: auto;
+					width: auto;
+					border-radius: 50%;
+					color: white;
+					box-sizing: border-box;
+					text-align: center;
+					vertical-align: middle;
+					padding: 10px 10px;
+				}
+			}
+			.linkedin:hover {
+				padding: 0;
+				height: auto;
+				width: auto;
+				.icon:hover {
+					height: auto;
+					width: auto;
+					background-color: #0077b5 !important;
+					border-radius: 50%;
+					box-sizing: border-box;
+					text-align: center;
+					vertical-align: middle;
+					padding: 10px 10px;
+				}
+			}
+		}
+	}
+}
+
