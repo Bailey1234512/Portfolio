@@ -1,0 +1,47 @@
+.project-1-examples {
+  display: block; }
+  .project-1-examples .navlink {
+    padding: 0;
+    margin: 0;
+    color: white; }
+  .project-1-examples .row {
+    padding: 0px !important;
+    margin: 0px !important; }
+  .project-1-examples .navbar-nav {
+    padding: 0px !important; }
+  .project-1-examples .nav-item {
+    border: 5px solid red; }
+  .project-1-examples .screenshot {
+    margin: 20px 0;
+    width: 100%;
+    height: auto; }
+  .project-1-examples p {
+    font-size: 1.0rem;
+    line-height: 1.5;
+    color: #333; }
+  .project-1-examples pre {
+    width: 100%;
+    margin: 0;
+    background: #f3f3f3;
+    padding: 1rem;
+    color: #67809f;
+    text-align: left; }
+  .project-1-examples span.explanation {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    margin-top: 1rem; }
+  @media screen and (min-width: 992px) {
+    .project-1-examples pre, .project-1-examples code {
+      color: blue;
+      margin: 0;
+      padding: 0 0 0 10px;
+      font-size: 1rem;
+      float: left; }
+      .project-1-examples pre style, .project-1-examples code style {
+        padding: 0 0 0 10px; }
+    .project-1-examples .explanation {
+      font-size: 1rem;
+      padding: 0; } }
+
+/*# sourceMappingURL=coding-examples.css.map */

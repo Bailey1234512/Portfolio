@@ -1,0 +1,66 @@
+.project-1-examples {
+    display: block;
+    .navlink{
+        padding: 0;
+        margin: 0;
+        color: white;
+    }
+    .row {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+    .navbar-nav{
+        padding: 0px!important;
+    }
+    .nav-item{
+        border: 5px solid red;
+    }
+    .screenshot {
+        margin: 20px 0;
+        width: 100%;
+        height: auto;
+    }
+    p {
+        font-size: 1.0rem;
+        line-height: 1.5;
+        color: #333;
+      }
+      
+      pre {
+        width: 100%;
+        margin: 0;
+        background: #f3f3f3;
+        padding: 1rem;
+        color: #67809f;
+        text-align:left;
+      }
+
+
+      span.explanation {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #555;
+        margin-top: 1rem;
+
+      }
+      
+      @media screen and (min-width: 992px) {
+        pre, code {
+            color: blue;
+            margin: 0;
+            padding: 0 0 0 10px;
+            font-size: 1rem;
+            float: left;
+            style{
+                padding: 0 0 0 10px;
+            }
+          }
+          
+          .explanation {
+              font-size: 1rem;
+              padding: 0 ;
+            }
+      }
+      
+}
+

@@ -3,11 +3,13 @@ const nameError = document.getElementById('nameError');
 
 function validateName() {
   if (nameInput.value === '') {
+    nameInput.style.borderColor = 'red';
     nameError.textContent = 'Please enter your name';
     console.log('Please enter your name');
     return false;
   }
   nameError.textContent = '';
+  nameInput.style.borderColor = '';
   return true;
 }
 
@@ -20,15 +22,18 @@ const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]
 
 function validateEmail() {
     if (emailInput.value === '') {
+      emailInput.style.borderColor = 'red';
       emailError.textContent = 'Please enter your email';
       console.log('Please enter your email');
       return false;
     } else if (!emailRegex.test(emailInput.value)) {
       emailError.textContent = 'Please enter a valid email address';
+      emailInput.style.borderColor = 'red';
       console.log('Please enter a valid email address');
       return false;
     }
     emailError.textContent = '';
+    emailInput.style.borderColor = '';
     return true;
   }
 

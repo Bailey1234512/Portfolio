@@ -76,6 +76,14 @@
 
   .menu1 a:last-child {
     margin-bottom: 20px; } }
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.underlined {
+  text-decoration: underline !important; }
+
 /* Sticky Sidebar */
 .sticky {
   position: relative;
@@ -102,6 +110,8 @@
   transform: translate(-50%, -50%);
   color: white !important;
   filter: brightness(100%); }
+  .hero-text h3 {
+    margin-bottom: 30px; }
 
 /* Main Image on Non-front Page's*/
 .bannerimg {
@@ -113,6 +123,31 @@
   position: relative;
   filter: brightness(75%); }
 
+.btn-container {
+  background: linear-gradient(to right, #8fb1dc, #998fdc) !important;
+  border-radius: 3px;
+  color: white !important;
+  padding: 15px;
+  margin: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.btn {
+  height: auto;
+  line-height: 35px;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-radius: 3px;
+  text-align: center;
+  border: 1px solid transparent; }
+  .btn a {
+    color: #333645;
+    text-decoration: none; }
+  .btn a:hover {
+    color: white;
+    text-decoration: none; }
+
 .project-list {
   margin-top: 30px;
   line-height: 1.365rem;
@@ -120,6 +155,14 @@
   font-size: 0.8125rem;
   color: #333645;
   text-decoration: none; }
+  .project-list a {
+    color: #333645;
+    text-decoration: none;
+    transition: 0.5s ease; }
+  .project-list a:hover {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s ease; }
   .project-list h1 {
     font-size: 2.7rem;
     margin-bottom: -10px;
@@ -133,17 +176,8 @@
     margin: 0 0 11px; }
   .project-list h3 a {
     color: #333645; }
-  .project-list .btn {
-    height: auto;
-    line-height: 35px;
-    padding: 5px;
-    text-transform: uppercase;
-    font-size: 1rem;
-    border-radius: 3px;
-    text-align: center;
-    border: 1px solid transparent; }
   .project-list .dot {
-    background-color: #8fb1dc;
+    background: linear-gradient(to left, #8fb1dc, #998fdc) !important;
     border-radius: 20px;
     padding: 10px;
     margin: 0 20%; }
@@ -158,13 +192,14 @@
     margin-top: 20px;
     padding: 20px;
     display: block;
+    min-height: 320px;
     border-radius: 15px;
     border: 1px solid #ccc;
     text-align: center;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     text-decoration: none;
-    background-color: white;
     color: black;
+    background-color: white;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.9);
     position: relative;
     top: 0;
     transition: top ease 0.5s; }
@@ -174,13 +209,6 @@
     border-color: transparent;
     top: -10px;
     transition: 0.5s ease; }
-  .project-list .btn-container {
-    background-color: #8fb1dc;
-    border-radius: 3px;
-    color: white !important;
-    padding: 15px;
-    margin: 20px;
-    box-sizing: border-box; }
   .project-list .project-1 .block {
     background-image: url("../img/photo-1488477181946-6428a0291777.jpg");
     background-position: center; }
@@ -200,17 +228,89 @@
     background-image: url("../img/photo-1574484284002-952d92456975.jpg");
     background-position: center; }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0; }
+  .overlay .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out; }
+  .overlay .popup h2 {
+    margin: 10px;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif; }
+  .overlay .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333; }
+  .overlay .popup .close:hover {
+    color: #d80606; }
+  .overlay .popup .content {
+    max-height: 30%;
+    overflow: auto; }
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1; }
+
+@media screen and (max-width: 700px) {
+  .box {
+    width: 70%; }
+
+  .popup {
+    width: 70%; } }
 .contact-us-form {
   padding: 10px; }
   .contact-us-form p {
     padding: 0;
     text-overflow: initial;
     word-wrap: break-word; }
+  .contact-us-form .error {
+    color: red; }
+  .contact-us-form .btn-container {
+    background: linear-gradient(to right, #8fb1dc, #998fdc) !important;
+    border-radius: 3px;
+    color: white !important;
+    padding: 15px;
+    margin: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .contact-us-form .btn {
+    height: auto;
+    line-height: 35px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 3px;
+    text-align: center;
+    border: 1px solid transparent; }
+    .contact-us-form .btn a {
+      color: #333645;
+      text-decoration: none; }
+    .contact-us-form .btn a:hover {
+      color: white;
+      text-decoration: none; }
 
 .textblock {
   margin: 20px 10%;
   margin-top: 20px;
-  padding: 20px;
+  padding: 20px !important;
   display: block;
   border-radius: 15px;
   border: 1px solid #ccc;
@@ -363,5 +463,51 @@
   height: 95%;
   width: 95%;
   border-radius: 15px; }
+
+.project-1-examples {
+  display: block; }
+  .project-1-examples .navlink {
+    padding: 0;
+    margin: 0;
+    color: white; }
+  .project-1-examples .row {
+    padding: 0px !important;
+    margin: 0px !important; }
+  .project-1-examples .navbar-nav {
+    padding: 0px !important; }
+  .project-1-examples .nav-item {
+    border: 5px solid red; }
+  .project-1-examples .screenshot {
+    margin: 20px 0;
+    width: 100%;
+    height: auto; }
+  .project-1-examples p {
+    font-size: 1.0rem;
+    line-height: 1.5;
+    color: #333; }
+  .project-1-examples pre {
+    width: 100%;
+    margin: 0;
+    background: #f3f3f3;
+    padding: 1rem;
+    color: #67809f;
+    text-align: left; }
+  .project-1-examples span.explanation {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    margin-top: 1rem; }
+  @media screen and (min-width: 992px) {
+    .project-1-examples pre, .project-1-examples code {
+      color: blue;
+      margin: 0;
+      padding: 0 0 0 10px;
+      font-size: 1rem;
+      float: left; }
+      .project-1-examples pre style, .project-1-examples code style {
+        padding: 0 0 0 10px; }
+    .project-1-examples .explanation {
+      font-size: 1rem;
+      padding: 0; } }
 
 /*# sourceMappingURL=application.css.map */
