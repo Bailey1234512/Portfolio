@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Junior Web Developer Portfolio">
     <meta name="keywords" content="HTML, CSS, JavaScript, Web Developer, Trainee, Available, Hire Me">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
@@ -161,6 +162,9 @@
                                         <label for="subject" class="">Subject</label>
                                         <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject*" required>
                                     </div>
+                                    <div id="subjectError" class="error">
+                                        
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
@@ -169,6 +173,9 @@
                                         <label for="message">Your message</label>
                                         <textarea type="text" id="message" name="message" rows="2"
                                             class="form-control md-textarea" placeholder="message*"></textarea>
+                                    </div>
+                                    <div id="messageError" class="error">
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -187,13 +194,17 @@
                             </li>
 
                             <li>
-                                <i class="fa fa-phone"></i>
-                                <p>07305 063143</p>
+                                <a href="tel:+447305063143">
+                                    <i class="fa fa-phone"></i>
+                                    <p>07305 063143</p>
+                                </a>
                             </li>
 
                             <li>
-                                <i class="fa fa-envelope"></i>
-                                <p>jbgc87@gmail.com</p>
+                                <a href="mailto:jbgc87@gmail.com">
+                                    <i class="fa fa-envelope"></i>
+                                    <p>jbgc87@gmail.com</p>
+                                </a>
                             </li>
                         </ul>
                     </div>

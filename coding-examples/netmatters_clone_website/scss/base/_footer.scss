@@ -1,6 +1,7 @@
 footer {
 	font-size: 13px;
 	font-family: Poppins, sans-serif;
+	line-height: 22px;
 	background-color: $bunting;
 	display: block;
 
@@ -9,6 +10,10 @@ footer {
 
 	h4{
 		margin: 25px 0 ;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 18px;
 	}
 
 	ul {
@@ -93,20 +98,14 @@ footer {
 			font-size: 17px;
 
 			a {
-				padding: 0;
-				span {
-					padding: 10px;
-				}
+				padding-top: 10px !important;
 			}
 
 			.facebook {
 				padding: 0;
-				height: auto;
-				width: auto;
-
 				.icon {
-					height: auto;
-					width: auto;
+					width: 22px;
+					height: 22px;
 					border-radius: 50%;
 					color: white;
 					box-sizing: border-box;
@@ -117,11 +116,7 @@ footer {
 			}
 			.facebook:hover {
 				padding: 0;
-				height: auto;
-				width: auto;
 				.icon:hover {
-					height: auto;
-					width: auto;
 					background-color: #3b5998 !important;
 					border-radius: 50%;
 					box-sizing: border-box;
@@ -133,11 +128,7 @@ footer {
 
 			.twitter {
 				padding: 0;
-				height: auto;
-				width: auto;
 				.icon {
-					height: auto;
-					width: auto;
 					border-radius: 50%;
 					color: white;
 					box-sizing: border-box;
@@ -148,11 +139,7 @@ footer {
 			}
 			.twitter:hover {
 				padding: 0;
-				height: auto;
-				width: auto;
 				.icon:hover {
-					height: auto;
-					width: auto;
 					background-color: #00aced !important;
 					border-radius: 50%;
 					box-sizing: border-box;
@@ -162,13 +149,9 @@ footer {
 				}
 			}
 
-			.isntagram {
+			.instagram {
 				padding: 0;
-				height: auto;
-				width: auto;
 				.icon {
-					height: auto;
-					width: auto;
 					border-radius: 50%;
 					color: white;
 					box-sizing: border-box;
@@ -179,11 +162,7 @@ footer {
 			}
 			.instagram:hover {
 				padding: 0;
-				height: auto;
-				width: auto;
 				.icon:hover {
-					height: auto;
-					width: auto;
 					background-color: #d93175 !important;
 					border-radius: 50%;
 					box-sizing: border-box;
@@ -210,11 +189,7 @@ footer {
 			}
 			.linkedin:hover {
 				padding: 0;
-				height: auto;
-				width: auto;
 				.icon:hover {
-					height: auto;
-					width: auto;
 					background-color: #0077b5 !important;
 					border-radius: 50%;
 					box-sizing: border-box;

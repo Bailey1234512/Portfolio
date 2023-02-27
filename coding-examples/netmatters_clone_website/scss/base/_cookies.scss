@@ -1,0 +1,297 @@
+#simple-cookie-consent {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    resize: vertical;
+    overflow: auto;
+    z-index: 999999999;
+    background: rgba(0, 0, 0, 0.7);
+    color: #666;
+
+
+
+    .cookie-consent-container {
+        position: absolute;
+        top: 40%;
+        left: 20px;
+        right: 20px;
+        margin: 0 auto 0;
+        background: #fff;
+        padding: 20px;
+        max-width: 600px;
+        height: auto;
+    }
+
+
+    button {
+        border: none;
+        border-radius: 2px;
+        padding: 10px 20px;
+        margin: 5px 10px;
+        background: none;
+        font-size: 17px;
+        height: 47px;
+        text-transform: uppercase;
+        border: 1px solid grey;
+
+    }
+
+    .cookie-consent-selection{
+        margin: auto;
+        padding: 10px 0;
+    }
+    .cookie-consent-allow {
+        background-color: $purple;
+        color: #fff;
+    }
+
+    .cookie-consent-allow:focus,
+    .cookie-consent-allow:hover {
+        background-color: $purple-hover;
+        cursor: pointer;
+    }
+
+    .cookie-consent-settings {
+        background-color: #999aa2;
+        color: white;
+    }
+
+    .cookie-consent-settings:focus,
+    .cookie-consent-settings:hover {
+        background-color: #84858f;
+        cursor: pointer;
+    }
+    hr {
+        margin: 15px 0;
+    }
+    h3{
+        color: #333645;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 38px;
+
+
+        padding: 0 0 10px 0!important;
+        margin: 10px 0 !important;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    p{
+        color: #666;
+        font-size: 16px;
+        line-height: 30px;
+        padding: 10px 0 25px 0;
+        margin: 0 0 10px 0 !important;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    a{
+        color: inherit;
+    }
+
+}
+
+.settings-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 9999999999999999;
+  
+
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+.settings-popup-inner {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    font-size: 14px;
+    line-height: 15px;
+
+
+    .container{
+        display: inline-block;
+        padding: 15px 0;
+        margin: 0;
+        width: auto;
+        text-align: left;
+            .row {
+                display: flex;
+                justify-content: flex-start;
+                margin: 0;
+                .functional-cookies-deny,
+                .functional-cookies-enable {
+                  max-width: 100px !important;
+                  margin-right: 5px;
+                }
+                .performance-cookies-deny,
+                .performance-cookies-enable {
+                  max-width: 100px !important;
+                  margin-right: 5px;
+                }
+            }
+          
+
+
+          
+        h2{
+            font-size: 36px;
+            line-height: 40px;
+            font-style: normal;
+            font-weight: 400;
+        }
+        h3{
+            font-size: 26px;
+            line-height: 29px;
+            font-style: normal;
+            font-weight: 400;
+        }
+        h4{
+            font-size: 16px;
+            line-height: 18px;
+            font-style: normal;
+            font-weight: 700;
+        }
+        #cookiesTable{
+            padding-top: 10px;
+            display: none;
+            transition: 0.5s;
+            width: 100%;
+            th{
+                background-color: #aaaaaa;
+                border: 1px solid white;
+            }
+        
+            td{
+                background-color: #ddd;
+                border: 1px solid white;
+            }
+            th:first-child,
+            td:first-child {
+            width: 25%;
+
+            }
+
+            th:nth-child(2),
+            td:nth-child(2) {
+            width: 50%;
+
+            }
+
+            th:last-child,
+            td:last-child {
+            width: 25%;
+
+            }
+        }
+    }
+
+    button {
+        border: none;
+        border-radius: 2px;
+        padding: 10px 20px;
+        margin: 5px 10px;
+        background: none;
+        font-size: 17px;
+        height: 47px;
+        background-color: #fff;
+        border: 1px solid #f0f0f0;
+    }
+
+
+    .active{
+        background-color: $purple;
+    }
+    .active:hover{
+        background-color: $purple-hover;
+    }
+    a{
+        color: inherit;
+    }
+    h3{
+        font-size: 26px;
+        line-height: 28.6px;
+    }
+    h2{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .button-grey{
+        background-color: #999aa2;
+        color: white;
+        
+    }
+    .button-grey:hover{
+        background-color: #84858F;
+        color: white;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .settings-popup-inner {
+
+        .container{
+            padding: 15px 0;
+            margin: 0;
+            width: 750px;
+            .row {
+                display: flex;
+                justify-content: flex-start;
+                margin: 0;
+                .functional-cookies-deny,
+                .functional-cookies-enable {
+                  max-width: 100px !important;
+                  margin-right: 5px;
+                }
+                .performance-cookies-deny,
+                .performance-cookies-enable {
+                  max-width: 100px !important;
+                  margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .settings-popup-inner {
+
+        .container{
+            padding: 15px 0;
+            margin: 0;
+            width: 970px;
+            .row {
+                display: flex;
+                justify-content: flex-end;
+                margin: 0;
+                .functional-cookies-deny,
+                .functional-cookies-enable {
+                  max-width: 100px !important;
+                  margin-right: 5px;
+                }
+                .performance-cookies-deny,
+                .performance-cookies-enable {
+                  max-width: 100px !important;
+                  margin-right: 5px;
+                }
+            }
+        }
+    }
+}

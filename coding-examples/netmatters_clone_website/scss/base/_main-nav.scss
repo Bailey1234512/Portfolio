@@ -24,6 +24,336 @@
   .container-fluid{
     padding: 0 !important;
   }
+
+
+
+
+
+
+  .bespoke-software{
+    background-color: #333645 ;
+    
+    i{
+      color: #67809f;
+    }
+  
+    .triangle {
+      position: relative;
+      height: 60px;
+      width: 100%;
+    } 
+    
+    .triangle:before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      bottom: 0;
+      width: calc(100% / 7);
+      height: 100%;
+      background: #67809f;
+      -webkit-clip-path: polygon(50% 70%, 0 0, 100% 0);
+      clip-path: polygon(50% 70%, 0 0, 100% 0);
+    }
+    
+    .dropdown-menu{
+      background-color: #526781;
+    
+    }
+    .list-group-item{
+      background-color: #526781 ;
+    }
+  
+  
+  }
+  .bespoke-software:hover{
+    background-color: #67809f;
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    
+    i{
+      color: white;
+    }
+  }
+  
+  
+  .it-support{
+    background-color: #333645 ;
+    i{
+      color: #4183d7;
+    }
+    .triangle {
+      position: relative;
+      height: 60px;
+      width: 100%;
+    } 
+    
+    .triangle:before {
+      content: '';
+      position: absolute;
+      display: block;
+      left: calc(100% / 7);
+      top: 0;
+      bottom: 0;
+      width: calc(100% / 7);
+      height: 100%;
+      background: #4183d7;
+      -webkit-clip-path: polygon(50% 70%, 0 0, 100% 0);
+      clip-path: polygon(50% 70%, 0 0, 100% 0);
+    }
+    .dropdown-menu{
+      background-color: #286abd;;
+    }
+    .list-group-item{
+      background-color: #286abd ;
+    }
+    
+  }
+  
+  .it-support:hover{
+    background-color: #4183d7;
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    
+    i{
+      color: white;
+    }
+  }
+  
+  
+  .digital-marketing{
+    background-color: #333645 ;
+    i{
+      color: #2ecc71;
+    }
+    .triangle {
+      position: relative;
+      height: 60px;
+      width: 100%;
+    } 
+    
+    .triangle:before {
+      content: '';
+      position: absolute;
+      display: block;
+      left: calc(200% / 7);
+      top: 0;
+      bottom: 0;
+      width: calc(100% / 7);
+      height: 100%;
+      background: #2ecc71;
+      -webkit-clip-path: polygon(50% 70%, 0 0, 100% 0);
+      clip-path: polygon(50% 70%, 0 0, 100% 0);
+    }
+    .dropdown-menu{
+      background-color: #25a25a;;
+    }
+    .list-group-item{
+      background-color: #25a25a; ;
+    }
+  }
+  
+  .digital-marketing:hover{
+    background-color: #2ecc71;
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    
+    i{
+      color: white;
+    }
+  }
+  
+  .telecoms-services{
+    background-color: #333645 ;
+    i{
+      color: #d64541;
+    }
+    .triangle {
+      position: relative;
+      height: 60px;
+      width: 100%;
+    } 
+    
+    .triangle:before {
+      content: '';
+      position: absolute;
+      display: block;
+      left: calc(300% / 7);
+      top: 0;
+      bottom: 0;
+      width: calc(100% / 7);
+      height: 100%;
+      background: #d64541;
+      -webkit-clip-path: polygon(50% 70%, 0 0, 100% 0);
+      clip-path: polygon(50% 70%, 0 0, 100% 0);
+    }
+    .dropdown-menu{
+      background-color: #bc2c28;
+    }
+    .list-group-item{
+      background-color: #bc2c28;
+    }
+  }
+  
+  .telecoms-services:hover{
+    background-color: #d64541;
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    
+    i{
+      color: white;
+    }
+  }
+  
+  .web-design{
+    background-color: #333645 ;
+    i{
+      color: #926fb1;
+    }
+    .triangle {
+      position: relative;
+      height: 60px;
+      width: 100%;
+    } 
+    
+    .triangle:before {
+      content: '';
+      position: absolute;
+      display: block;
+      left: calc(400% / 7);
+      top: 0;
+      bottom: 0;
+      width: calc(100% / 7);
+      height: 100%;
+      background: #926fb1;
+      -webkit-clip-path: polygon(50% 70%, 0 0, 100% 0);
+      clip-path: polygon(50% 70%, 0 0, 100% 0);
+    }
+    .dropdown-menu{
+      background-color: #79539a;
+    }
+    .list-group-item{
+      background-color: #79539a;
+    }
+  }
+  
+  .web-design:hover{
+    background-color: #926fb1;
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    
+    i{
+      color: white;
+    }
+  }
+  
+  .cyber-security{
+    background-color: #333645 ;
+    i{
+      color: #f62459;
+    }
+    .triangle {
+      position: relative;
+      height: 60px;
+      width: 100%;
+    } 
+    
+    .triangle:before {
+      content: '';
+      position: absolute;
+      display: block;
+      left: calc(500% / 7);
+      top: 0;
+      bottom: 0;
+      width: calc(100% / 7);
+      height: 100%;
+      background: #f62459;
+      -webkit-clip-path: polygon(50% 70%, 0 0, 100% 0);
+      clip-path: polygon(50% 70%, 0 0, 100% 0);
+    }
+    .dropdown-menu{
+      background-color: #de093f;;
+    }
+    .list-group-item{
+      background-color: #de093f;; ;
+    }
+  }
+  
+  
+  .cyber-security:hover{
+    background-color: #f62459;
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    
+    i{
+      color: white;
+    }
+  }
+  
+  .developer-course{
+    background-color: #333645 ;
+    i{
+      color: #ce4125;
+    }
+    .triangle {
+      position: relative;
+      height: 60px;
+      width: 100%;
+    } 
+    
+    .triangle:before {
+      content: '';
+      position: absolute;
+      display: block;
+      left: calc(600% / 7);
+      top: 0;
+      bottom: 0;
+      width: calc(100% / 7);
+      height: 100%;
+      background: #ce4125;
+      -webkit-clip-path: polygon(50% 70%, 0 0, 100% 0);
+      clip-path: polygon(50% 70%, 0 0, 100% 0);
+    }
+    .dropdown-menu{
+      background-color: #a3331d;;
+    }  
+    .list-group-item{
+      background-color: #a3331d; ;
+    }
+  }
+  
+  
+  .developer-course:hover{
+    background-color: #ce4125;
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    
+    i{
+      color: white;
+    }
+  }
+  
+
+
+
+
+
+
+
 }
 .dropdown-hover:hover>.dropdown-menu {
 display: inline-block;
@@ -49,321 +379,3 @@ pointer-events: none;
   text-decoration: underline !important;
 }
 
-
-
-.bespoke-software{
-  background-color: #333645 ;
-  
-  i{
-    color: #67809f;
-  }
-
-  .triangle {
-    position: relative;
-    height: 60px;
-    width: 100%;
-  } 
-  
-  .triangle:before {
-    content: '';
-    position: absolute;
-    display: block;
-    top: 0;
-    bottom: 0;
-    width: calc(100% / 7);
-    height: 100%;
-    background: #67809f;
-    -webkit-clip-path: polygon(50% 70%, 0 0, 100% 0);
-    clip-path: polygon(50% 70%, 0 0, 100% 0);
-  }
-  
-  .dropdown-menu{
-    background-color: #526781;
-  
-  }
-  .list-group-item{
-    background-color: #526781 ;
-  }
-
-
-}
-.bespoke-software:hover{
-  background-color: #67809f;
-  a{
-    color: white;
-    text-decoration: none;
-  }
-  
-  i{
-    color: white;
-  }
-}
-
-
-.it-support{
-  background-color: #333645 ;
-  i{
-    color: #4183d7;
-  }
-  .triangle {
-    position: relative;
-    height: 60px;
-    width: 100%;
-  } 
-  
-  .triangle:before {
-    content: '';
-    position: absolute;
-    display: block;
-    left: calc(100% / 7);
-    top: 0;
-    bottom: 0;
-    width: calc(100% / 7);
-    height: 100%;
-    background: #4183d7;
-    -webkit-clip-path: polygon(50% 70%, 0 0, 100% 0);
-    clip-path: polygon(50% 70%, 0 0, 100% 0);
-  }
-  .dropdown-menu{
-    background-color: #286abd;;
-  }
-  .list-group-item{
-    background-color: #286abd ;
-  }
-  
-}
-
-.it-support:hover{
-  background-color: #4183d7;
-  a{
-    color: white;
-    text-decoration: none;
-  }
-  
-  i{
-    color: white;
-  }
-}
-
-
-.digital-marketing{
-  background-color: #333645 ;
-  i{
-    color: #2ecc71;
-  }
-  .triangle {
-    position: relative;
-    height: 60px;
-    width: 100%;
-  } 
-  
-  .triangle:before {
-    content: '';
-    position: absolute;
-    display: block;
-    left: calc(200% / 7);
-    top: 0;
-    bottom: 0;
-    width: calc(100% / 7);
-    height: 100%;
-    background: #2ecc71;
-    -webkit-clip-path: polygon(50% 70%, 0 0, 100% 0);
-    clip-path: polygon(50% 70%, 0 0, 100% 0);
-  }
-  .dropdown-menu{
-    background-color: #25a25a;;
-  }
-  .list-group-item{
-    background-color: #25a25a; ;
-  }
-}
-
-.digital-marketing:hover{
-  background-color: #2ecc71;
-  a{
-    color: white;
-    text-decoration: none;
-  }
-  
-  i{
-    color: white;
-  }
-}
-
-.telecoms-services{
-  background-color: #333645 ;
-  i{
-    color: #d64541;
-  }
-  .triangle {
-    position: relative;
-    height: 60px;
-    width: 100%;
-  } 
-  
-  .triangle:before {
-    content: '';
-    position: absolute;
-    display: block;
-    left: calc(300% / 7);
-    top: 0;
-    bottom: 0;
-    width: calc(100% / 7);
-    height: 100%;
-    background: #d64541;
-    -webkit-clip-path: polygon(50% 70%, 0 0, 100% 0);
-    clip-path: polygon(50% 70%, 0 0, 100% 0);
-  }
-  .dropdown-menu{
-    background-color: #bc2c28;
-  }
-  .list-group-item{
-    background-color: #bc2c28;
-  }
-}
-
-.telecoms-services:hover{
-  background-color: #d64541;
-  a{
-    color: white;
-    text-decoration: none;
-  }
-  
-  i{
-    color: white;
-  }
-}
-
-.web-design{
-  background-color: #333645 ;
-  i{
-    color: #926fb1;
-  }
-  .triangle {
-    position: relative;
-    height: 60px;
-    width: 100%;
-  } 
-  
-  .triangle:before {
-    content: '';
-    position: absolute;
-    display: block;
-    left: calc(400% / 7);
-    top: 0;
-    bottom: 0;
-    width: calc(100% / 7);
-    height: 100%;
-    background: #926fb1;
-    -webkit-clip-path: polygon(50% 70%, 0 0, 100% 0);
-    clip-path: polygon(50% 70%, 0 0, 100% 0);
-  }
-  .dropdown-menu{
-    background-color: #79539a;
-  }
-  .list-group-item{
-    background-color: #79539a;
-  }
-}
-
-.web-design:hover{
-  background-color: #926fb1;
-  a{
-    color: white;
-    text-decoration: none;
-  }
-  
-  i{
-    color: white;
-  }
-}
-
-.cyber-security{
-  background-color: #333645 ;
-  i{
-    color: #f62459;
-  }
-  .triangle {
-    position: relative;
-    height: 60px;
-    width: 100%;
-  } 
-  
-  .triangle:before {
-    content: '';
-    position: absolute;
-    display: block;
-    left: calc(500% / 7);
-    top: 0;
-    bottom: 0;
-    width: calc(100% / 7);
-    height: 100%;
-    background: #f62459;
-    -webkit-clip-path: polygon(50% 70%, 0 0, 100% 0);
-    clip-path: polygon(50% 70%, 0 0, 100% 0);
-  }
-  .dropdown-menu{
-    background-color: #de093f;;
-  }
-  .list-group-item{
-    background-color: #de093f;; ;
-  }
-}
-
-
-.cyber-security:hover{
-  background-color: #f62459;
-  a{
-    color: white;
-    text-decoration: none;
-  }
-  
-  i{
-    color: white;
-  }
-}
-
-.developer-course{
-  background-color: #333645 ;
-  i{
-    color: #ce4125;
-  }
-  .triangle {
-    position: relative;
-    height: 60px;
-    width: 100%;
-  } 
-  
-  .triangle:before {
-    content: '';
-    position: absolute;
-    display: block;
-    left: calc(600% / 7);
-    top: 0;
-    bottom: 0;
-    width: calc(100% / 7);
-    height: 100%;
-    background: #ce4125;
-    -webkit-clip-path: polygon(50% 70%, 0 0, 100% 0);
-    clip-path: polygon(50% 70%, 0 0, 100% 0);
-  }
-  .dropdown-menu{
-    background-color: #a3331d;;
-  }  
-  .list-group-item{
-    background-color: #a3331d; ;
-  }
-}
-
-
-.developer-course:hover{
-  background-color: #ce4125;
-  a{
-    color: white;
-    text-decoration: none;
-  }
-  
-  i{
-    color: white;
-  }
-}

@@ -1,0 +1,231 @@
+
+.open {
+  width: 250px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+.sidebar {
+
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    right: -20px;
+    background-color: #333645;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 10px;
+    color: white;
+    overflow: auto;
+    .visible {
+        width: 250px;
+    }
+    .sub-menu-banner {
+        margin-top: 20px;
+        border-radius: 3px;
+        overflow: hidden;
+
+        .sub-menu {
+            padding: 0;
+            width: auto !important;
+
+            a {
+                padding: 10px;
+                margin: 0;
+                background-color: rgba(0, 0, 0, .25) !important;
+
+                .link-text {
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: white;
+                    text-decoration: none;
+
+                }
+            }
+        }
+    }
+
+
+    a {
+        font-size: 18px;
+        text-decoration: none;
+        padding: 20px 0 20px 0;
+        margin: 20px 0 20px 0;
+        ;
+        display: block;
+        border-radius: 3px;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        outline: 1px solid rgba(0, 0, 0, .25);
+        border: 1px solid hsla(0, 0%, 100%, .1);
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    .sidebar a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .openbtn {
+        width: 56px;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+        color: white;
+        border: 0;
+
+    }
+
+
+    .sidebar-lg {
+
+        a {
+            font-size: 18px;
+            text-decoration: none;
+            padding: 20px 0 20px 0;
+            margin: 20px 0 20px 0;
+            ;
+            display: block;
+            border-radius: 3px;
+            color: #fff;
+            text-align: left;
+            text-transform: uppercase;
+            outline: 1px solid rgba(0, 0, 0, .25);
+            border: 1px solid hsla(0, 0%, 100%, .1);
+
+            .link-icon-container {
+                width: 25px;
+                height: 25px;
+                padding: 0;
+                margin: 0;
+                font-size: 10px !important;
+                line-height: 0.4px;
+                content: \BB;
+            }
+        }
+    }
+
+
+    .software {
+        icon {
+            color: $grey;
+        }
+
+
+    }
+
+    .software:hover {
+        a {
+            background-color: rgba(225, 225, 225, .05);
+        }
+    }
+
+    .it {
+        span {
+            color: $grey;
+        }
+    }
+
+
+    .it:hover {
+        a {
+            background-color: rgba(225, 225, 225, .05);
+        }
+    }
+
+
+    .digital {
+        span {
+            color: $grey;
+        }
+    }
+
+    .digital:hover {
+        a {
+            background-color: rgba(225, 225, 225, .05);
+        }
+    }
+
+    .telecoms {
+        span {
+            color: $grey;
+        }
+    }
+
+    .telecoms:hover {
+        a {
+            background-color: rgba(225, 225, 225, .05);
+        }
+    }
+
+    .security {
+        span {
+            color: $grey;
+        }
+    }
+
+    .security:hover {
+        a {
+            background-color: rgba(225, 225, 225, .05);
+        }
+    }
+
+    .developer {
+        span {
+            color: $grey;
+        }
+    }
+
+    .developer:hover {
+        a {
+            background-color: rgba(225, 225, 225, .05);
+        }
+    }
+
+    .software {
+        span {
+            color: $grey;
+        }
+    }
+
+    ul {
+        list-style-type: none !important;
+        padding: 0;
+    }
+
+}
+
+//   .overlay{
+//     position: absolute;
+//     height: 100%;
+//     width: 100%;
+//     background-color: rgb(0, 0, 0) !important;
+//     z-index: 100000000000000000;
+//   }
+
+@media (max-width: 1262px) {
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar-lg {
+        display: block;
+    }
+}

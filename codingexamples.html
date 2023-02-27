@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Junior Web Developer Portfolio">
     <meta name="keywords" content="HTML, CSS, JavaScript, Web Developer, Trainee, Available, Hire Me">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
@@ -105,22 +106,28 @@
             <div class="container">
                 <div class="slick-slider project-list">
                     <div class="wrapper">
-                        <div class="slide"><img src="img/photo-1488477181946-6428a0291777.jpg" alt="Image 1">
+                        <div class="slide">
+                            <img src="img/photo-1488477181946-6428a0291777.jpg" alt="Image 1">
                             <h3>Project 1</h3>
                         </div>
-                        <div class="slide"><img src="img/photo-1496412705862-e0088f16f791.jpg" alt="Image 2">
+                        <div class="slide">
+                            <img src="img/photo-1496412705862-e0088f16f791.jpg" alt="Image 2">
                             <h3>Project 2</h3>
                         </div>
-                        <div class="slide"><img src="img/photo-1555939594-58d7cb561ad1.jpg" alt="Image 3">
+                        <div class="slide">
+                            <img src="img/photo-1555939594-58d7cb561ad1.jpg" alt="Image 3">
                             <h3>Project 3</h3>
                         </div>
-                        <div class="slide"><img src="../img/photo-1563379926898-05f4575a45d8.jpg" alt="Image 4">
+                        <div class="slide">
+                            <img src="../img/photo-1563379926898-05f4575a45d8.jpg" alt="Image 4">
                             <h3>Project 4</h3>
                         </div>
-                        <div class="slide"><img src="../img/photo-1565299624946-b28f40a0ae38.jpg" alt="Image 5">
+                        <div class="slide">
+                            <img src="../img/photo-1565299624946-b28f40a0ae38.jpg" alt="Image 5">
                             <h3>Project 5</h3>
                         </div>
-                        <div class="slide"><img src="../img/photo-1574484284002-952d92456975.jpg" alt="Image 6">
+                        <div class="slide">
+                            <img src="../img/photo-1574484284002-952d92456975.jpg" alt="Image 6">
                             <h3>Project 6</h3>
                         </div>
                     </div>
@@ -149,7 +156,7 @@
                                             <!-- Navbar dropdown -->
                                             <li class="col nav-item position-static">
 
-                                                <a class="navlink" href="#" id="navbarDropdown" role="button"
+                                                <a class="navlink" id="navbarDropdown" role="button"
                                                     aria-expanded="false">
                                                     <div class="text-center" style="position: relative;">
                                                         Menu Item 1
@@ -158,7 +165,7 @@
                                             </li>
                                             <li class="col nav-item position-static">
 
-                                                <a class="navlink" href="#" id="navbarDropdown" role="button"
+                                                <a class="navlink" id="navbarDropdown" role="button"
                                                     data-mdb-toggle="dropdown" aria-expanded="false">
                                                     <div class="text-center" style="position: relative;">
                                                         Menu Item 2
@@ -167,7 +174,7 @@
                                             </li>
                                             <li class="col nav-item position-static">
 
-                                                <a class="navlink" href="#" id="navbarDropdown" role="button"
+                                                <a class="navlink" id="navbarDropdown" role="button"
                                                     data-mdb-toggle="dropdown" aria-expanded="false">
                                                     <div class="text-center" style="position: relative;">
                                                         Menu Item 3
@@ -176,7 +183,7 @@
                                             </li>
                                             <li class="col nav-item  position-static">
 
-                                                <a class="navlink" href="#" id="navbarDropdown" role="button"
+                                                <a class="navlink" id="navbarDropdown" role="button"
                                                     data-mdb-toggle="dropdown" aria-expanded="false">
                                                     <div class="text-center" style="position: relative;">
                                                         Menu Item 4
@@ -185,7 +192,7 @@
                                             </li>
                                             <li class="col nav-item  position-static">
 
-                                                <a class="navlink" href="#" id="navbarDropdown" role="button"
+                                                <a class="navlink" id="navbarDropdown" role="button"
                                                     data-mdb-toggle="dropdown" aria-expanded="false">
                                                     <div class="text-center" style="position: relative;">
                                                         Menu Item 5
@@ -194,7 +201,7 @@
                                             </li>
                                             <li class="col nav-item  position-static">
 
-                                                <a class="navlink" href="#" id="navbarDropdown" role="button"
+                                                <a class="navlink" id="navbarDropdown" role="button"
                                                     data-mdb-toggle="dropdown" aria-expanded="false">
                                                     <div class="text-center" style="position: relative;">
                                                         Menu Item 6
@@ -202,7 +209,7 @@
                                                 </a>
                                             </li>
                                             <li class="col nav-item  position-static">
-                                                <a class="navlink" href="#" id="navbarDropdown" role="button"
+                                                <a class="navlink" id="navbarDropdown" role="button"
                                                     data-mdb-toggle="dropdown" aria-expanded="false">
                                                     <div class="text-center" style="position: relative;">
                                                         Menu Item 7
@@ -240,8 +247,9 @@
 
 }
 .triangle-row{
-    width: 100%;
+    max-width: 100%;
     height: 100px;
+    overflow: hidden;
 }
 .triangle {
     position: relative;
@@ -364,7 +372,7 @@
                                 In order to activate the Javascript below, please delete all the css above 
                             </h1>
                             <div class="btn-container text-center">
-                                <p class="btn" onclick="runJavaScript()">Click me to activate javascript below.</p>
+                                <span class="btn" onclick="runJavaScript()">Click me to activate javascript below.</span>
                             </div>
                             
                             <pre>
@@ -447,6 +455,9 @@ function runJavaScript(){
                                         <input type="text" id="subject" name="subject" class="form-control"
                                             placeholder="Subject*" required>
                                     </div>
+                                    <div id="subjectError" class="error">
+                                        
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
@@ -455,6 +466,9 @@ function runJavaScript(){
                                         <label for="message">Your message</label>
                                         <textarea type="text" id="message" name="message" rows="2"
                                             class="form-control md-textarea" placeholder="message*"></textarea>
+                                    </div>
+                                    <div id="messageError" class="error">
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -473,13 +487,17 @@ function runJavaScript(){
                             </li>
 
                             <li>
-                                <i class="fa fa-phone"></i>
-                                <p>07305 063143</p>
+                                <a href="tel:+447305063143">
+                                    <i class="fa fa-phone"></i>
+                                    <p>07305 063143</p>
+                                </a>
                             </li>
 
                             <li>
-                                <i class="fa fa-envelope"></i>
-                                <p>jbgc87@gmail.com</p>
+                                <a href="mailto:jbgc87@gmail.com">
+                                    <i class="fa fa-envelope"></i>
+                                    <p>jbgc87@gmail.com</p>
+                                </a>
                             </li>
                         </ul>
                     </div>

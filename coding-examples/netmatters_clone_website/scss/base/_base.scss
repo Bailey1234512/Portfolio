@@ -6,12 +6,18 @@
 
 * {
 	box-sizing: border-box;
+
+}
+
+.homepage {
+	z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
 }
 
 .container {
 	margin-left: none;
 	margin-right: none;
 	overflow: hidden;
+	width: 1250px !important;
 }
 
 // Body
@@ -25,11 +31,37 @@ body {
 	padding: 0;
 }
 
+.main {
+	position: relative;
+}
+
 .small-text {
 	font-size: 10px;
 }
+
 .secondary-text {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.sticky-header {
+	position: fixed;
+	padding: auto;
+	transition: top 0.3s ease-in-out;
+	z-index: 99999;
+}
+
+header {
+	background: #ddd;
+	height: 50px;
+	position: fixed;
+	top: 0;
+	transition: top 0.3s ease-in-out;
+	width: 100%;
+	text-align: center;
+}
+
+.nav-up {
+	top: -220px;
 }
 
 /* Links */
@@ -58,6 +90,7 @@ a:active {
 	background-color: #999aa2;
 	color: white;
 }
+
 .my-icon:hover {
 	background-color: #7e808a;
 }
@@ -84,6 +117,9 @@ span.input-group-addon:hover {
 	margin: 0 !important;
 
 
+
+
+
 	.form-control {
 		height: 56px;
 		width: 208px;
@@ -95,7 +131,7 @@ span.input-group-addon:hover {
 		width: 44px;
 		padding: 5px;
 	}
-	
+
 	.input-group-addon i {
 		font-size: 24px;
 	}
@@ -111,15 +147,14 @@ span.input-group-addon:hover {
 		text-decoration: none;
 		text-align: center;
 	}
-	.mobile {
-		float: right;
-	}
+
 	.btn {
 		height: 56px;
 		text-transform: uppercase;
 		text-align: center;
 		border: 1px solid transparent;
 	}
+
 	.btn-contact {
 		background-color: #999aa2;
 		border-radius: 3px;
@@ -128,6 +163,7 @@ span.input-group-addon:hover {
 		margin: 10px;
 		box-sizing: border-box;
 		font-size: 18px;
+
 		&:hover,
 		&:active,
 		&:focus {
@@ -144,6 +180,7 @@ span.input-group-addon:hover {
 		margin: 10px;
 		box-sizing: border-box;
 		font-size: 18px;
+
 		&:hover,
 		&:active,
 		&:focus {
@@ -151,18 +188,20 @@ span.input-group-addon:hover {
 			color: white;
 		}
 	}
-	.mobile{
+
+	.mobile {
 		color: #333645;
 		text-decoration: none;
 		font-size: 32px;
-    	margin-left: 15px;
+		margin-left: 15px;
 	}
 }
 
 
 @media screen and (max-width: 767px) {
 	.header-top {
-	height: 168px;
+		height: 168px;
+
 		span.input-group-addon {
 			position: relative;
 		}
@@ -180,26 +219,26 @@ span.input-group-addon:hover {
 
 
 @media screen and (min-width: 991px) and (max-width: 767px) {
-    .header-top{
+	.header-top {
 		.form-control {
 			width: 142px !important;
 			padding: 5px 15px;
 			background-color: #eeeeee69;
 		}
 	}
-	
+
 }
 
 @media screen and (min-width: 1260px) and (max-width: 992px) {
 	.search-icon {
-	  width: 49px;
-	  height: 44px;
-	  padding: 5px;
-	  border: 1px solid #ccc;
-	  display: inline-block;
-	  text-align: center;
+		width: 49px;
+		height: 44px;
+		padding: 5px;
+		border: 1px solid #ccc;
+		display: inline-block;
+		text-align: center;
 	}
-  }
+}
 
 
 
@@ -207,21 +246,30 @@ span.input-group-addon:hover {
 	.small-screens {
 		display: none !important;
 	}
-	
-	.header-top{
-		.container{
+
+	.container {
+		margin-left: none;
+		margin-right: none;
+		overflow: hidden;
+		width: auto !important;
+	}
+
+	.header-top {
+		.container {
 			margin: 0;
 			padding: 0;
 
 			min-width: 100%;
 		}
-		.form-control{
+
+		.form-control {
 			width: 100%;
-			background-color: rgba(0,0,0,.1);
-			outline: 1px solid hsla(0,0%,100%,.2);
-			border: 2px solid rgba(0,0,0,.1);
+			background-color: rgba(0, 0, 0, .1);
+			outline: 1px solid hsla(0, 0%, 100%, .2);
+			border: 2px solid rgba(0, 0, 0, .1);
 			transition: none;
 			padding-right: 40px;
+
 			.input-group-addon i {
 				height: 49px;
 				width: 44px;
@@ -235,8 +283,25 @@ span.input-group-addon:hover {
 				font-size: 20px;
 				outline: none;
 			}
-			
+
 		}
 	}
 }
 
+
+@media screen and (max-width: 767px) {
+	.mobile {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
+	.col {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+
+}
