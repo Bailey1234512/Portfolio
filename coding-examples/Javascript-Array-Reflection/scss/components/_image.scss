@@ -1,0 +1,29 @@
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    .image-card {
+      margin: 10px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      overflow: hidden;
+  
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+  
+      .email-address {
+        padding: 10px;
+        background-color: $secondary-color;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+  

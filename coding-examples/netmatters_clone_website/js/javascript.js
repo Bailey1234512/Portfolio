@@ -6,10 +6,27 @@ $(document).ready(function() {
     cssEase: 'linear',
     slidesToShow: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 30000000,
     accessibility: true,
     arrows: true,
   });
+
+
+  if ($(window).width() < 992) {
+    $('.wrapper').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+      // Check if the current slide is the first slide
+      if (currentSlide === 0) {
+        // Set the wrapper height to 640px if the next slide is not the first slide
+        if (nextSlide !== 0) {
+          $(this).height(581);
+        } else {
+          // Set the wrapper height to its default value if the next slide is the first slide
+          $(this).height(550);
+        }
+      }
+    });
+  }
+
 });
 
 
@@ -18,7 +35,7 @@ $(document).ready(function(){
     slidesToShow: 1,
     slidesToScroll: 3,
     autoplay: true,
-    autoplaySpeed: 20000000,
+    autoplaySpeed: 2000,
     variableWidth:true,
     infinite:true,
     centerPadding: '30px',
@@ -46,25 +63,36 @@ setInterval(function() {
 }, 250);
 
 function hasScrolled() {
-    var st = $(this).scrollTop();
-    
-    // Make scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-    
-    // If scrolled down and past the navbar, add class .nav-up.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('header').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
-        }
+  var st = $(this).scrollTop();
+
+  // Make scroll more than delta
+  if (Math.abs(lastScrollTop - st) <= delta) {
+    return;
+  }
+
+  if (st <= 200) {
+    $('header').addClass('no-sticky');
+  } else {
+    $('header').removeClass('no-sticky');
+  }
+
+  // If scrolled down and past the navbar, add class .nav-up.
+  if (st > lastScrollTop && st > navbarHeight) {
+    // Scroll Down
+    if (st > 200) {
+      $('header').removeClass('nav-down').addClass('nav-up');
     }
-  
-    lastScrollTop = st;
+  } else {
+    // Scroll Up
+    $('header').removeClass('nav-up').addClass('nav-down');
+  }
+
+  lastScrollTop = st;
 }
+
+
+
+
 
 
 
@@ -73,34 +101,69 @@ function hasScrolled() {
 // Sidebar //
 let sidebarOpen = false;
 
-window.onload = function() {
-  const openBtn = document.querySelector('.menu-container.openbtn');
-  openBtn.addEventListener('click', () => {
-    document.getElementById("mySidebar").style.width = "270px";
-    document.getElementById("mySidebar").style.right = "0px";
-    document.getElementById("home-page").style.transition = "0.5s";
-    document.getElementById("sticky-header").style.transition = "0.5s";
-    document.getElementById("top-carousel").style.transition = "0.5s";
-    document.getElementById("home-page").style.right = "270px";
-    document.getElementById("mySidebar").style.boxShadow = "-10000px 0 0 9999px rgba(0,0,0,0.5)";
-    sidebarOpen = true;
-  });
-
-  document.addEventListener('mousedown', (e) => {
-    if (!document.querySelector('.sidebar').contains(e.target) && sidebarOpen) {
-      document.getElementById("mySidebar").style.width = "0";
-      document.getElementById("mySidebar").style.right = "-40px";
-      document.getElementById("home-page").style.width = "100%";
-      document.getElementById("sticky-header").style.width = "100%";
-      document.getElementById("top-carousel").style.width = "100%";
-      document.getElementById("home-page").style.right = "0";
-      document.getElementById("mySidebar").style.boxShadow = "-10000px 0 0 9999px rgba(0,0,0,0)";
-      sidebarOpen = false;
-    }
-  });
-};
 
 
+if (window.innerWidth > 992) {
+  window.onload = function() {
+  
+    const openBtn = document.querySelector('.menu-container.openbtn');
+    openBtn.addEventListener('click', () => {
+      document.getElementById("mySidebar").style.width = "350px";
+      document.getElementById("mySidebar").style.right = "0px";
+      document.getElementById("home-page").style.transition = "0.5s";
+  
+      document.getElementById("top-carousel").style.transition = "0.5s";
+      document.getElementById("home-page").style.right = "350px";
+      document.body.style.overflow = "hidden";
+      document.getElementById("mySidebar").style.boxShadow = "-10000px 0 0 9999px rgba(0,0,0,0.5)";
+      sidebarOpen = true;
+    });
+  
+    document.addEventListener('mousedown', (e) => {
+      if (!document.querySelector('.sidebar').contains(e.target) && sidebarOpen) {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("mySidebar").style.right = "-40px";
+        document.getElementById("home-page").style.width = "100%";
+        document.getElementById("top-carousel").style.width = "100%";
+        document.getElementById("home-page").style.right = "0";
+
+        document.body.style.overflow = "visible";
+        document.getElementById("mySidebar").style.boxShadow = "-10000px 0 0 9999px rgba(0,0,0,0)";
+        sidebarOpen = false;
+      }
+    });
+  };
+} else {
+  window.onload = function() {
+  
+    const openBtn = document.querySelector('.menu-container.openbtn');
+    openBtn.addEventListener('click', () => {
+      document.getElementById("mySidebar").style.width = "270px";
+      document.getElementById("mySidebar").style.right = "0px";
+      document.getElementById("home-page").style.transition = "0.5s";
+  
+      document.getElementById("top-carousel").style.transition = "0.5s";
+      document.getElementById("home-page").style.right = "270px";
+
+      document.body.style.overflow = "hidden";
+      document.getElementById("mySidebar").style.boxShadow = "-10000px 0 0 9999px rgba(0,0,0,0.5)";
+      sidebarOpen = true;
+    });
+  
+    document.addEventListener('mousedown', (e) => {
+      if (!document.querySelector('.sidebar').contains(e.target) && sidebarOpen) {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("mySidebar").style.right = "-40px";
+        document.getElementById("home-page").style.width = "100%";
+        document.getElementById("top-carousel").style.width = "100%";
+        document.getElementById("home-page").style.right = "0";
+        document.body.style.overflow = "visible";
+        document.getElementById("mySidebar").style.boxShadow = "-10000px 0 0 9999px rgba(0,0,0,0)";
+        sidebarOpen = false;
+      }
+    });
+  };
+}
 
 
 
@@ -115,7 +178,10 @@ window.addEventListener('load', function() {
       event.stopPropagation();
     });
   }
+  
 });
+
+
 
 
 
@@ -136,6 +202,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Check if the user has made a cookie choice
   if (document.cookie.indexOf("visited=allow") !== -1 || document.cookie.indexOf("visited=deny") !== -1) {
     cookieConsent.style.display = "none";
+    document.body.style.overflow = 'visible';
   }
 
   if (changeSettingsBtn && allowButton) {
@@ -168,6 +235,17 @@ document.addEventListener("DOMContentLoaded", function() {
       settingsPopup.style.display = "none"
       cookieConsent.style.display = "block";
     });
+
+
+    // Add a click event listener to the close button
+    allowButton.addEventListener('click', function() {
+      // Remove the overflow: hidden CSS from the body element
+      document.body.style.overflow = 'visible';
+      console.log('test')
+    });
+
+
+
 
 });
 

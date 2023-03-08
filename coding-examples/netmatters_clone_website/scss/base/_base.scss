@@ -29,6 +29,7 @@ body {
 	color: #666;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
 
 .main {
@@ -48,6 +49,10 @@ body {
 	padding: auto;
 	transition: top 0.3s ease-in-out;
 	z-index: 99999;
+	height: 0px;
+}
+.no-sticky{
+	position: static;
 }
 
 header {
@@ -200,10 +205,12 @@ span.input-group-addon:hover {
 
 @media screen and (max-width: 767px) {
 	.header-top {
-		height: 168px;
+		height: 100px;
 
-		span.input-group-addon {
+		.input-group {
 			position: relative;
+			max-height: 47px;
+			margin-bottom: 10px;
 		}
 
 

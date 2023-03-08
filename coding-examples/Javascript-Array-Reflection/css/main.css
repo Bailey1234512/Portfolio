@@ -1,0 +1,118 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  padding: 0;
+  margin: 0; }
+
+a {
+  color: #007bff;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+.text-centered {
+  text-align: center; }
+
+button,
+input[type="submit"] {
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer; }
+  button:hover,
+  input[type="submit"]:hover {
+    background-color: #0062cc; }
+  button:focus,
+  input[type="submit"]:focus {
+    outline: none; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10%; }
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600; }
+  form input[type="email"] {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 16px;
+    margin: 0 0 20px 0; }
+  form .error-message {
+    position: relative;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    margin-top: -45px;
+    margin-left: -90%;
+    transition: "fade" .5s; }
+  form .error-message::before {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 8px 8px 0 8px;
+    border-color: transparent transparent red transparent;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%); }
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .image-container .image-card {
+    margin: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden; }
+    .image-container .image-card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover; }
+    .image-container .image-card .email-address {
+      padding: 10px;
+      background-color: #6c757d;
+      color: #fff;
+      font-size: 14px;
+      text-align: center; }
+
+.gallery-container {
+  width: 90vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: auto;
+  justify-content: center; }
+
+.gallery-item {
+  max-width: 240px;
+  height: 240px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.1);
+  margin: 10px; }
+  .gallery-item img {
+    max-width: 240px;
+    max-height: 240px; }
+
+.selected {
+  transform: scale(1.05);
+  background-color: #007bff; }
+
+/*# sourceMappingURL=main.css.map */

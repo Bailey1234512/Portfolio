@@ -1,14 +1,8 @@
 
-.open {
-  width: 250px;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
 
 
 .sidebar {
-
+    display: block;
     height: 100%;
     width: 0;
     position: fixed;
@@ -21,9 +15,11 @@
     padding: 10px;
     color: white;
     overflow: auto;
+
     .visible {
         width: 250px;
     }
+
     .sub-menu-banner {
         margin-top: 20px;
         border-radius: 3px;
@@ -227,5 +223,95 @@
 
     .sidebar-lg {
         display: block;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .sidebar {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 9999999;
+        top: 0;
+        right: -20px;
+        background-color: #333645;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding: 0;
+        color: white;
+
+        .sidebar-lg {
+            width: 350px;
+            padding: 0;
+
+            .menu-item {
+                border-top: 1px solid hsla(0, 0%, 100%, .1);
+                border-bottom: 1px solid rgba(0, 0, 0, .25);
+                a{
+                    border: 0;
+                    display: block;
+                    padding: 20px;
+                    margin: 0;
+
+                    position: relative;
+                    color: #fff;
+                    font-size: 1rem;
+                    font-size: 16px;
+                    line-height: 16px;
+                    font-weight: 400;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+                .sub-menu-banner{
+                    margin: 0;
+                    border: 0;
+                    .sub-menu-banner-title{
+                        display: none;
+                        margin: 0;
+                        border: 0;
+                    }
+                    a {
+                        border-top: 1px solid hsla(0,0%,100%,.05);
+                        display: block;
+                        color: #fff;
+                        background-color: rgba(0,0,0,.25);
+                        padding: 15px 20px;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        position: relative;
+
+                        font-weight: 400;
+                        font-size: 14px;
+                        font-style: normal;
+                        line-height: 20px;
+        
+                        .link-icon-container {
+                            width: 25px;
+                            height: 25px;
+                            padding: 0;
+                            margin: 0;
+                            font-size: 10px !important;
+                            line-height: 0.4px;
+                            content: \BB;
+                        }
+        
+                    }
+                }
+                
+            }
+
+            .menu-item:hover > a {
+                background-color: #3D404E;
+            }
+
+            
+        }
+
+        .sidebar-md {
+            display: none;
+        }
+
     }
 }

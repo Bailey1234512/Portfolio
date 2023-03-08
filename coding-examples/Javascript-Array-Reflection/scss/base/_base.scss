@@ -1,0 +1,25 @@
+// Base Styles
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $gray-700;
+  background-color: $white;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+
+.text-centered{
+  text-align: center;
+}

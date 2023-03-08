@@ -1,0 +1,29 @@
+.gallery-container {
+    width: 90vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: auto; 
+    justify-content: center; 
+  }
+  
+  .gallery-item {
+    max-width: 240px;
+    height: 240px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    img{
+        max-width: 240px;
+        max-height: 240px;
+    }
+  }
+
+  .selected {
+    transform: scale(1.05);
+    background-color: $primary-color;
+  }
+  

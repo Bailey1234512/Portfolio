@@ -9,20 +9,18 @@
     z-index: 999999999;
     background: rgba(0, 0, 0, 0.7);
     color: #666;
-
-
-
-    .cookie-consent-container {
-        position: absolute;
-        top: 40%;
-        left: 20px;
-        right: 20px;
-        margin: 0 auto 0;
-        background: #fff;
-        padding: 20px;
-        max-width: 600px;
-        height: auto;
-    }
+  
+  
+  .cookie-consent-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    max-width: 600px;
+    height: auto;
+  }
 
 
     button {

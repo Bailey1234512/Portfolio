@@ -1,0 +1,17 @@
+button,
+input[type="submit"] {
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

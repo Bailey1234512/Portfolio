@@ -1,0 +1,17 @@
+// Import variables and base styles
+@import "base/variables";
+@import "base/base";
+
+// Import component styles
+@import "components/button";
+@import "components/form";
+@import "components/image";
+
+// Import layout styles
+@import "layout/header";
+@import "layout/footer";
+@import "layout/layout";
+
+// Import page styles
+@import "pages/home";
+@import "pages/contact";

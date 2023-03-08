@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Javascript Array Reflection</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+
+
+  <body>
+    <div class="header">
+      <h1 class="text-centered">
+        Click on the images you wish to save then enter your email address
+         and press the submit button to store the images in an array!
+       </h1>
+    </div>
+
+
+
+
+    <div class="main">
+
+
+      
+      <!-- <img id="myImage" src="" alt="My Image"> -->
+      <div id="gallery-container" class="gallery-container">
+        <span id="galleryItem" class="galleryItem"> </span>
+      </div>
+
+      <form id="emailForm">
+        <label for="emailInput">Email address:</label>
+        <input class="input-field" type="email" id="emailInput" name="email">
+        <button type="submit" onclick="submitForm(event)">Submit</button>
+        <div class="error-message " id="emailError" style="display: none;">Please enter a valid email address</div>
+      </form>
+    </div>
+
+
+    <h2 class="text-centered">To display previously selected images please enter your email address here:</h2>
+    <h6 class="text-centered">note this only stores images within your local storage, so the images aren't stored when you load this page on another computer.</h6>
+    <form>
+      <label for="email-input">Enter your email address:</label>
+      <input type="email" id="email-input" required>
+      <button type="button" onclick="displayImages()">Display Images</button>
+    </form>
+    
+    <div id="images-container"></div>
+
+    <div class="footer">
+
+    </div>
+    <script src="javascript/javascript.js"></script>
+  </body>
+</html>

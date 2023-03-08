@@ -4,7 +4,7 @@
 <html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Full Service Digital Agency | Cambridgeshire &amp; Norfolk | Net Matters </title>
   <link rel="stylesheet" href="css/application.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -16,18 +16,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialmaterial-design-icons/4.0.0/iconfont/material-icons.min.css" referrerpolicy="no-referrer" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
-
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
 
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="js/carousel.js"></script>
+
 
 </head>
 
@@ -400,11 +395,10 @@
 
 
   <ul class="sidebar-lg">
-    <li>
+    <li class="menu-item">
       <a href="#">
         Services
       </a>
-
       <div class="sub-menu-banner">
         <ul class="container sub-menu" role="menu">
           <li class="h2 sub-menu-banner-title">
@@ -465,7 +459,7 @@
     </li>
 
 
-    <li class="">
+    <li class="menu-item">
       <a href="#">
         Our Work
       </a>
@@ -490,7 +484,7 @@
     </li>
 
 
-    <li class="active">
+    <li class="menu-item">
       <a href="#">
         Events
       </a>
@@ -515,7 +509,7 @@
     </li>
 
 
-    <li class="">
+    <li class="menu-item">
       <a href="#">
         Our Knowledge
       </a>
@@ -564,7 +558,7 @@
     </li>
 
 
-    <li class="">
+    <li class="menu-item">
       <a href="#">
         Training
       </a>
@@ -613,7 +607,7 @@
     </li>
 
 
-    <li class="">
+    <li class="menu-item">
       <a href="#">
         Our Company
       </a>
@@ -670,7 +664,7 @@
     </li>
 
 
-    <li class="">
+    <li class="menu-item">
       <a href="#">
         Contact Us
       </a>
@@ -717,11 +711,15 @@
       </div>
 
     </li>
-    <li class="">
+
+    <li class="menu-item">
       <a href="#">
         COVID Risk Assessments
       </a>
     </li>
+
+
+
     <li class="visible-xs visible-sm">
       <a href="#" target="_blank" rel="noopener noreferrer">
         Support
@@ -745,7 +743,7 @@
 
 
 
-    <header id="sticky-header" class="sticky-header">
+    <header id="no-sticky" class="sticky-header">
       <div class="header-top">
         <div class="container">
           <nav class="navbar sticky-top row justify-content-between" style="background-color: white; padding: 0;">
@@ -773,10 +771,10 @@
             <div
               class="col-xs-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 order-xs-5 order-sm-5 order-md-5 order-lg-4 order-xl-4" style="padding: 0;" >
               <div class="menu-container openbtn" style="text-align: right;">
-                <input id="menu-toggle" type="checkbox" />
+                <input id="menu-toggle" type="checkbox">
                 <label class='menu-button-container' for="menu-toggle">
 
-                  <label class='menu-button'></label>
+                  <span class='menu-button'></span>
 
                 </label>
               </div>
@@ -806,7 +804,7 @@
               <!-- Navbar dropdown -->
               <li class="col nav-item dropdown dropdown-hover position-static bespoke-software">
 
-                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                <a class="nav-link navbarDropdown" href="#" role="button" data-mdb-toggle="dropdown"
                   aria-expanded="false">
                   <div class="text-center" style="position: relative;">
                     <i class="bi bi-grid-3x3-gap-fill"></i><br>
@@ -817,7 +815,7 @@
 
 
                 <!-- Dropdown menu -->
-                <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown">
+                <div class="dropdown-menu w-100 mt-0">
 
                   <div class="container">
                     <div class="triangle"></div>
@@ -936,7 +934,7 @@
               </li>
 
               <li class="col nav-item dropdown dropdown-hover position-static it-support">
-                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                <a class="nav-link navbarDropdown" href="#" role="button" data-mdb-toggle="dropdown"
                   aria-expanded="false">
                   <div class="text-center">
                     <i class="bi-display"></i><br>
@@ -945,7 +943,7 @@
                   </div>
                 </a>
                 <!-- Dropdown menu -->
-                <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown">
+                <div class="dropdown-menu w-100 mt-0">
                   <div class="container">
                     <div class="triangle"></div>
                     <h2>Our IT Support Services</h2>
@@ -1019,7 +1017,7 @@
               </li>
 
               <li class="col nav-item dropdown dropdown-hover position-static digital-marketing">
-                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                <a class="nav-link navbarDropdown" href="#" role="button" data-mdb-toggle="dropdown"
                   aria-expanded="false">
                   <div class="text-center">
                     <i class="bi bi-bar-chart-fill"></i><br>
@@ -1028,7 +1026,7 @@
                   </div>
                 </a>
                 <!-- Dropdown menu -->
-                <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                <div class="dropdown-menu w-100 mt-0" style="border-top-left-radius: 0;
                                 border-top-right-radius: 0;
                               ">
 
@@ -1099,17 +1097,17 @@
               </li>
 
               <li class="col nav-item dropdown dropdown-hover position-static telecoms-services">
-                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                <a class="nav-link navbarDropdown" href="#" role="button" data-mdb-toggle="dropdown"
                   aria-expanded="false">
                   <div class="text-center">
                     <i class="mdi mdi-phone-in-talk"></i><br>
-                    <span class="small-text">TELECOMES</span><br>
+                    <span class="small-text">Telecoms</span><br>
                     SERVICES
                   </div>
 
                 </a>
                 <!-- Dropdown menu -->
-                <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                <div class="dropdown-menu w-100 mt-0" style="border-top-left-radius: 0;
                                 border-top-right-radius: 0;
                               ">
 
@@ -1171,7 +1169,7 @@
               </li>
 
               <li class="col nav-item dropdown dropdown-hover position-static web-design">
-                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                <a class="nav-link navbarDropdown" href="#" role="button" data-mdb-toggle="dropdown"
                   aria-expanded="false">
                   <div class="text-center">
                     <i class="bi bi-code-slash"></i><br>
@@ -1181,7 +1179,7 @@
 
                 </a>
                 <!-- Dropdown menu -->
-                <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                <div class="dropdown-menu w-100 mt-0" style="border-top-left-radius: 0;
                                 border-top-right-radius: 0;
                               ">
 
@@ -1240,7 +1238,7 @@
               </li>
 
               <li class="col nav-item dropdown dropdown-hover position-static cyber-security">
-                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                <a class="nav-link navbarDropdown" href="#"  role="button" data-mdb-toggle="dropdown"
                   aria-expanded="false">
                   <div class="text-center">
                     <i class="bi bi-shield-shaded"></i><br>
@@ -1250,7 +1248,7 @@
 
                 </a>
                 <!-- Dropdown menu -->
-                <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                <div class="dropdown-menu w-100 mt-0" style="border-top-left-radius: 0;
                                 border-top-right-radius: 0;
                               ">
 
@@ -1313,7 +1311,7 @@
 
 
               <li class="col nav-item dropdown dropdown-hover position-static developer-course">
-                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                <a class="nav-link navbarDropdown" href="#"  role="button" data-mdb-toggle="dropdown"
                   aria-expanded="false">
                   <div class="text-center">
                     <i class="mdi mdi-school"></i><br>
@@ -1323,7 +1321,7 @@
 
                 </a>
                 <!-- Dropdown menu -->
-                <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                <div class="dropdown-menu w-100 mt-0" style="border-top-left-radius: 0;
                                 border-top-right-radius: 0;
                               ">
 
@@ -1397,11 +1395,9 @@
             <div class="slide-content">
               <img src="./img/home-YLei.webp" alt="Image 1">
               <div class="carousel-text-container">
-
-                <h2><strong>The East Of Englands Leading Technology Company</strong></h2>
-                <p><strong>Performance-driven digital and technology services</strong></p>
-                <p><strong>with complete transparency.</strong></p>
-
+                <h2>The East Of Englands Leading Technology Company</h2>
+                <p>Performance-driven digital and technology services</p>
+                <p>with complete transparency.</p>
                 <div class="col-md-3" style="padding: 0;">
                   <a href="#" target="_blank" class="btn btn-block purple">WHY CHOOSE US? &nbsp; <i
                       class="fa fa-arrow-right"></i></a>
@@ -1410,94 +1406,94 @@
             </div>
           </div>
           <div class="slide">
-            <img src="./img/home-O67Y.webp" alt="Image 2">
-            <div class="carousel-text-container">
-              <strong>
-                <h2>Bespoke Software</h2>
-                <p>Delivering expert bespoke software</p>
-                <p>solutions across a range of industries.</p>
-              </strong>
-              <div class="col-md-3">
-                <a href="#" target="_blank" class="btn btn-block grey">FIND OUT MORE &nbsp; <i
-                    class="fa fa-arrow-right"></i></a>
+            <div class="slide-content">
+              <img src="./img/home-O67Y.webp" alt="Image 2">
+              <div class="carousel-text-container">
+                  <h2>Bespoke Software</h2>
+                  <p>Delivering expert bespoke software</p>
+                  <p>solutions across a range of industries.</p>
+                <div class="col-md-3">
+                  <a href="#" target="_blank" class="btn btn-block grey">FIND OUT MORE &nbsp; <i
+                      class="fa fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <img src="./img/home-gay8.webp" alt="Image 3">
+              <div class="carousel-text-container">
+                  <h2>IT Support</h2>
+                  <p>Fast and cost-effective IT support</p>
+                  <p>services for your business.</p>
+                <div class="col-md-3">
+                  <a href="#" target="_blank" class="btn btn-block blue">FIND OUT MORE &nbsp; <i
+                      class="fa fa-arrow-right"></i></a>
+                </div>
               </div>
             </div>
           </div>
           <div class="slide">
-            <img src="./img/home-gay8.webp" alt="Image 3">
-            <div class="carousel-text-container">
-              <strong>
-                <h2>IT Support</h2>
-                <p>Fast and cost-effective IT support</p>
-                <p>services for your business.</p>
-              </strong>
-              <div class="col-md-3">
-                <a href="#" target="_blank" class="btn btn-block blue">FIND OUT MORE &nbsp; <i
-                    class="fa fa-arrow-right"></i></a>
+            <div class="slide-content">
+              <img src="./img/home-6yTp.webp" alt="Image 4">
+              <div class="carousel-text-container">
+                  <h2>Digital Marketing</h2>
+                  <p>Generating your new business through</p>
+                  <p>results-driven marketing activities.</p>
+                <div class="col-md-3">
+                  <a href="#" target="_blank" class="btn btn-block green">FIND OUT MORE &nbsp; <i
+                      class="fa fa-arrow-right"></i></a>
+                </div>
               </div>
             </div>
           </div>
           <div class="slide">
-            <img src="./img/home-6yTp.webp" alt="Image 4">
-            <div class="carousel-text-container">
-              <strong>
-                <h2>Digital Marketing</h2>
-                <p>Generating your new business through</p>
-                <p>results-driven marketing activities.</p>
-              </strong>
-              <div class="col-md-3">
-                <a href="#" target="_blank" class="btn btn-block green">FIND OUT MORE &nbsp; <i
-                    class="fa fa-arrow-right"></i></a>
+            <div class="slide-content">
+              <img src="./img/home-J8Xx.webp" alt="Image 5">
+              <div class="carousel-text-container">
+                  <h2>Telecoms Services</h2>
+                  <p>A new approach to connectivity, see</p>
+                  <p>how we can help your business.</p>
+                <div class="col-md-3">
+                  <a href="#" target="_blank" class="btn btn-block red">FIND OUT MORE &nbsp; <i
+                      class="fa fa-arrow-right"></i></a>
+                </div>
               </div>
             </div>
           </div>
           <div class="slide">
-            <img src="./img/home-J8Xx.webp" alt="Image 5">
-            <div class="carousel-text-container">
-              <strong>
-                <h2>Telecomes Services</h2>
-                <p>A new approach to connectivity, see</p>
-                <p>how we can help your business.</p>
-              </strong>
-              <div class="col-md-3">
-                <a href="#" target="_blank" class="btn btn-block red">FIND OUT MORE &nbsp; <i
-                    class="fa fa-arrow-right"></i></a>
+            <div class="slide-content">
+              <div class="img-gradient">
+                <img src="./img/home-K0pn.webp" alt="Image 6">
               </div>
-            </div>
+              <div class="carousel-text-container">
+                  <h2>Web Design</h2>
+                  <p>For businesses looking to make a strong</p>
+                  <p>and effective first impression.</p>
+                <div class="col-md-3">
+                  <a href="#" target="_blank" class="btn btn-block purple">FIND OUT MORE &nbsp; <i
+                      class="fa fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>            
           </div>
           <div class="slide">
-            <div class="img-gradient">
-              <img src="./img/home-K0pn.webp" alt="Image 6">
-            </div>
-            <div class="carousel-text-container">
-              <strong>
-                <h2>Web Design</h2>
-                <p>For businesses looking to make a strong</p>
-                <p>and effective first impression.</p>
-              </strong>
-              <div class="col-md-3">
-                <a href="#" target="_blank" class="btn btn-block purple">FIND OUT MORE &nbsp; <i
-                    class="fa fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <img src="./img/home-MSxH.webp" alt="Image 6">
-            <div class="carousel-text-container">
-              <strong>
-                <h2>Cyber Security</h2>
-                <p>Keeping businesses and their customers</p>
-                <p>sensitivie infomration protected.</p>
-              </strong>
-              <div class="col-md-3">
-                <a href="#" target="_blank" class="btn btn-block pink">FIND OUT MORE &nbsp; <i
-                    class="fa fa-arrow-right"></i></a>
+            <div class="slide-content">
+              <img src="./img/home-MSxH.webp" alt="Image 6">
+              <div class="carousel-text-container">
+                  <h2>Cyber Security</h2>
+                  <p>Keeping businesses and their customers</p>
+                  <p>sensitivie infomration protected.</p>
+                <div class="col-md-3">
+                  <a href="#" target="_blank" class="btn btn-block pink">FIND OUT MORE &nbsp; <i
+                      class="fa fa-arrow-right"></i></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
 
 
@@ -1827,14 +1823,14 @@
                   <a class="article-link" href="#"></a>
 
                   <div class="img-container">
-                    <a class="img standard">
+                    <div class="img standard">
                       <a href="#" class="category grey btn-tooltip text-right" title="View all: Web Design / News">
                         CAREERS
                       </a>
                       <picture>
                         <img src="./img/business-development-account-zUub.jpg" class="img-fluid" alt="Netmatters ">
                       </picture>
-                    </a>
+                    </div>
                   </div>
 
                   <div class="block">
@@ -1869,14 +1865,14 @@
                   <a class="article-link" href="#"></a>
 
                   <div class="img-container">
-                    <a class="img standard">
+                    <div class="img standard">
                       <a href="#" class="category grey btn-tooltip text-right" title="View all: Web Design / News">
                         News
                       </a>
                       <picture>
                         <img src="./img/in-house-vs-outsourced-FXLI2.png" class="img-fluid" alt="Netmatters ">
                       </picture>
-                    </a>
+                    </div>
                   </div>
 
                   <div class="block">
@@ -2069,7 +2065,10 @@
         <div class="d-flex justify-content-between row footer-row">
           <div class="d-flex justify-content-center services col-12 col-sm-6 col-md-6 col-lg-2">
             <ul>
-              <h4>About Netmatters</h4>
+              <li>
+                <h4>About Netmatters</h4>
+              </li>
+
               <li class=" ">
                 <a href="#">News</a>
               </li>
@@ -2098,7 +2097,9 @@
           </div>
           <div class="d-flex justify-content-center services col-12 col-sm-6 col-md-6 col-lg-2">
             <ul>
-              <h4>Our Services</h4>
+              <li>
+                <h4>Our Services</h4>
+              </li>
               <li class=" ">
                 <a href="#">Bespoke Software</a>
               </li>
@@ -2125,7 +2126,9 @@
           <div class="d-flex justify-content-center offices col-12 col-sm-6 col-md-4 col-lg-2">
 
             <ul>
-              <h4>Cambridge Office</h4>
+              <li>
+                <h4>Cambridge Office</h4>
+              </li>
               <li>Unit 1.31,</li>
               <li>St John's Innovation Centre,</li>
               <li>Cowley Road, Milton,</li>
@@ -2137,7 +2140,9 @@
           </div>
           <div class="d-flex justify-content-center offices col-12 col-sm-6 col-md-4 col-lg-2">
             <ul>
-              <h4>Wymondham Office</h4>
+              <li>
+                <h4>Wymondham Office</h4>
+              </li>
               <li>Unit 15,</li>
               <li>Penfold Drive,</li>
               <li>Gateway 11 Business Park,</li>
@@ -2149,7 +2154,9 @@
           </div>
           <div class="d-flex justify-content-center offices col-sm-12 col-md-4 col-lg-2">
             <ul>
-              <h4>Great Yarmouth Office</h4>
+              <li>
+                <h4>Great Yarmouth Office</h4>
+              </li>
               <li>Suite F23,</li>
               <li>Beacon Innovation Centre,</li>
               <li>Beacon Park, Gorleston,</li>
@@ -2202,7 +2209,11 @@
 
 
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/javascript.js"></script>
 
 
 
@@ -2299,9 +2310,9 @@
       <table id="cookiesTable" class="table">
         <thead>
           <tr>
-            <th scope="col-2">Company</th>
-            <th scope="col-8">Domain</th>
-            <th scope="col-2">Enable/Disable</th>
+            <th class="col-2">Company</th>
+            <th class="col-8">Domain</th>
+            <th class="col-2">Enable/Disable</th>
           </tr>
         </thead>
         <tbody>

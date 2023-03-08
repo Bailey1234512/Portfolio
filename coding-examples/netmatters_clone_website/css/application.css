@@ -24,7 +24,8 @@ body {
   font-size: 16px;
   color: #666;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow: hidden; }
 
 .main {
   position: relative; }
@@ -39,7 +40,11 @@ body {
   position: fixed;
   padding: auto;
   transition: top 0.3s ease-in-out;
-  z-index: 99999; }
+  z-index: 99999;
+  height: 0px; }
+
+.no-sticky {
+  position: static; }
 
 header {
   background: #ddd;
@@ -144,9 +149,11 @@ span.input-group-addon:hover {
 
 @media screen and (max-width: 767px) {
   .header-top {
-    height: 168px; }
-    .header-top span.input-group-addon {
-      position: relative; }
+    height: 100px; }
+    .header-top .input-group {
+      position: relative;
+      max-height: 47px;
+      margin-bottom: 10px; }
     .header-top .form-control {
       height: 56px;
       background-color: #eeeeee69; } }
@@ -1285,7 +1292,7 @@ footer {
       transform: rotate(45deg); }
 
 .top-carousel {
-  margin-top: 209px;
+  margin-top: 200px;
   max-width: 100vw;
   overflow: hidden; }
   .top-carousel .slide-content {
@@ -1339,8 +1346,8 @@ footer {
     text-align: center; }
   .top-carousel .carousel-text-container {
     position: absolute;
-    top: 12%;
-    left: 20%;
+    top: 60px;
+    left: 10%;
     max-width: 1170px;
     z-index: 999;
     background-color: none !important;
@@ -1399,7 +1406,10 @@ footer {
     .top-carousel .carousel-text-container .pink:hover {
       background-color: #e80a42;
       color: white; }
-  @media (max-width: 1262px) {
+
+@media (max-width: 992px) {
+  .top-carousel {
+    margin-top: 96px; }
     .top-carousel .carousel-text-container {
       position: absolute;
       align-items: center;
@@ -1422,34 +1432,67 @@ footer {
         line-height: 28px;
         font-style: normal;
         font-weight: 600; }
-      .top-carousel .carousel-text-container .contact-us {
-        position: absolute;
-        top: 50%;
-        left: 45%;
+      .top-carousel .carousel-text-container .btn {
         display: flex;
         align-items: center;
         text-align: center;
         justify-content: center;
-        background-color: #926FB1;
-        padding: 5px;
+        box-sizing: border-box;
+        display: inline-block;
+        padding: 5px 20px;
         margin: 30px 30px 30px 0px;
-        height: 50px;
+        min-height: 50px;
         font-size: 20px;
         line-height: 50px;
-        font-weight: 400; }
-      .top-carousel .carousel-text-container .contact-us:hover {
-        background-color: #7E57A0; } }
-
+        font-weight: 400; } }
 @media (max-width: 992px) {
   .top-carousel {
     margin-top: 96px; } }
-.open {
-  width: 250px;
-  position: absolute;
-  top: 0;
-  right: 0; }
+@media (max-width: 576px) {
+  .top-carousel {
+    margin-top: 146px; }
 
+  .slide {
+    height: 550px; }
+    .slide .slide-content {
+      height: 550px; }
+      .slide .slide-content img {
+        min-height: 550px;
+        width: 100%; }
+
+  .slide:nth-child(2) {
+    height: 581px; }
+    .slide:nth-child(2) .slide-content {
+      height: 581px; }
+      .slide:nth-child(2) .slide-content img {
+        min-height: 581px;
+        width: 100%; }
+
+  .carousel-text-container {
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    margin: 0;
+    min-width: 90%; }
+    .carousel-text-container h2 {
+      font-size: 40px;
+      line-height: 48px;
+      font-style: normal;
+      font-weight: 600;
+      min-width: 80%; }
+    .carousel-text-container p {
+      font-size: 20px;
+      line-height: 28px;
+      font-style: normal;
+      font-weight: 600; } }
 .sidebar {
+  display: block;
   height: 100%;
   width: 0;
   position: fixed;
@@ -1567,6 +1610,71 @@ footer {
 
   .sidebar-lg {
     display: block; } }
+@media (min-width: 992px) {
+  .sidebar {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    right: -20px;
+    background-color: #333645;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 0;
+    color: white; }
+    .sidebar .sidebar-lg {
+      width: 350px;
+      padding: 0; }
+      .sidebar .sidebar-lg .menu-item {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25); }
+        .sidebar .sidebar-lg .menu-item a {
+          border: 0;
+          display: block;
+          padding: 20px;
+          margin: 0;
+          position: relative;
+          color: #fff;
+          font-size: 1rem;
+          font-size: 16px;
+          line-height: 16px;
+          font-weight: 400;
+          text-decoration: none;
+          text-transform: uppercase; }
+        .sidebar .sidebar-lg .menu-item .sub-menu-banner {
+          margin: 0;
+          border: 0; }
+          .sidebar .sidebar-lg .menu-item .sub-menu-banner .sub-menu-banner-title {
+            display: none;
+            margin: 0;
+            border: 0; }
+          .sidebar .sidebar-lg .menu-item .sub-menu-banner a {
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            display: block;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.25);
+            padding: 15px 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+            position: relative;
+            font-weight: 400;
+            font-size: 14px;
+            font-style: normal;
+            line-height: 20px; }
+            .sidebar .sidebar-lg .menu-item .sub-menu-banner a .link-icon-container {
+              width: 25px;
+              height: 25px;
+              padding: 0;
+              margin: 0;
+              font-size: 10px !important;
+              line-height: 0.4px;
+              content: \BB; }
+      .sidebar .sidebar-lg .menu-item:hover > a {
+        background-color: #3D404E; }
+    .sidebar .sidebar-md {
+      display: none; } }
 #simple-cookie-consent {
   height: 100vh;
   width: 100vw;
@@ -1580,10 +1688,9 @@ footer {
   color: #666; }
   #simple-cookie-consent .cookie-consent-container {
     position: absolute;
-    top: 40%;
-    left: 20px;
-    right: 20px;
-    margin: 0 auto 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background: #fff;
     padding: 20px;
     max-width: 600px;
