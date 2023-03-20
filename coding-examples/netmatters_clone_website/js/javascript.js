@@ -98,6 +98,7 @@ function hasScrolled() {
 
 
 
+
 // Sidebar //
 let sidebarOpen = false;
 
@@ -105,9 +106,11 @@ let sidebarOpen = false;
 
 if (window.innerWidth > 992) {
   window.onload = function() {
-  
+
+    const menuButton = document.querySelector(".menu-button");
     const openBtn = document.querySelector('.menu-container.openbtn');
     openBtn.addEventListener('click', () => {
+      menuButton.classList.add("active");
       document.getElementById("mySidebar").style.width = "350px";
       document.getElementById("mySidebar").style.right = "0px";
       document.getElementById("home-page").style.transition = "0.5s";
@@ -121,6 +124,7 @@ if (window.innerWidth > 992) {
   
     document.addEventListener('mousedown', (e) => {
       if (!document.querySelector('.sidebar').contains(e.target) && sidebarOpen) {
+        menuButton.classList.remove("active");
         document.getElementById("mySidebar").style.width = "0";
         document.getElementById("mySidebar").style.right = "-40px";
         document.getElementById("home-page").style.width = "100%";
@@ -135,13 +139,13 @@ if (window.innerWidth > 992) {
   };
 } else {
   window.onload = function() {
-  
+    const menuButton = document.querySelector(".menu-button");
     const openBtn = document.querySelector('.menu-container.openbtn');
     openBtn.addEventListener('click', () => {
       document.getElementById("mySidebar").style.width = "270px";
       document.getElementById("mySidebar").style.right = "0px";
       document.getElementById("home-page").style.transition = "0.5s";
-  
+      menuButton.classList.add("active");
       document.getElementById("top-carousel").style.transition = "0.5s";
       document.getElementById("home-page").style.right = "270px";
 
@@ -152,6 +156,7 @@ if (window.innerWidth > 992) {
   
     document.addEventListener('mousedown', (e) => {
       if (!document.querySelector('.sidebar').contains(e.target) && sidebarOpen) {
+        menuButton.classList.remove("active");
         document.getElementById("mySidebar").style.width = "0";
         document.getElementById("mySidebar").style.right = "-40px";
         document.getElementById("home-page").style.width = "100%";

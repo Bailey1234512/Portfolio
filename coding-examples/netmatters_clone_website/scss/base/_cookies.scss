@@ -243,6 +243,17 @@
 
 
 @media (max-width: 767px) {
+     
+      .cookie-consent-container {
+        position: absolute;
+        background: #fff;
+        padding: 20px;
+        min-width: 90%;
+        max-width: 90%;
+        height: auto;
+      }
+
+
     .settings-popup-inner {
 
         .container{

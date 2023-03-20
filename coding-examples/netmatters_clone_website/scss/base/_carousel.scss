@@ -68,10 +68,10 @@
         height: 50px;
 
 
-        font-size: 15px !important;
+        font-size: 25px !important;
 
         position: absolute;
-        top: 0;
+        top: -5px;
         left: 0;
 
         text-align: center;
@@ -236,12 +236,6 @@
     }
 
     
-}
-@media (max-width: 992px) {
-    .top-carousel {
-        margin-top: 96px;
-
-    }
 }
 
 

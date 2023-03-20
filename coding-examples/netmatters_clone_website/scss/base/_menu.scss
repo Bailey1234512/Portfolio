@@ -55,19 +55,21 @@
 	margin-top: 8px;
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button::before {
+.menu-button.active::before {
 	margin-top: 0px;
 	transform: rotate(405deg);
-}
+  }
+  
+  .menu-button.active::after {
+	margin-top: 0px;
+	transform: rotate(-405deg);
+  }
 
 #menu-toggle:checked + .menu-button-container .menu-button {
 	background: $bunting;
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button::after {
-	margin-top: 0px;
-	transform: rotate(-405deg);
-}
+
 
 .menu-button-container {
 	display: flex;
