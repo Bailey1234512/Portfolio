@@ -1,0 +1,115 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Junior Web Developer Portfolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Web Developer, Trainee, Available, Hire Me">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+    <link href="../css/application.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+
+    <title>Coding Examples</title>
+</head>
+
+
+<body>
+    <div class="project-3-examples">
+        <img class="screenshot" src="/img/movie-database-table-structure.png"
+            alt="screenshot of navbar from Javascript Array Reflection." loading="lazy">
+
+        <div class="code-explanation-container">
+
+            <h1 class="textblock">
+                The objective of this SQL query is to retrieve a list of all actors who have appeared in more than one movie and the corresponding movie title,
+                reviewer name, and reviewer star rating for each of those movies. The results are ordered by actor last name, first name, and movie title.
+            </h1>
+
+
+            <div class="row">
+                <div class="col-12 col-xl-6">
+                    <pre>
+                        <code>
+
+        SELECT actor.act_fname AS "Actor First name",
+            actor.act_lname AS "Actor Last Name",
+            movie.mov_title AS "Movie Title",
+            reviewer.rev_name AS "Reviewer Name",
+            rating.rev_stars AS "Reviewer Star Rating"
+        FROM actor
+        JOIN movie_cast ON actor.act_id = movie_cast.act_id
+        JOIN movie ON movie.mov_id = movie_cast.mov_id
+        JOIN rating ON movie.mov_id = rating.mov_id
+        JOIN reviewer ON rating.rev_id = reviewer.rev_id
+        WHERE actor.act_id IN (
+            SELECT act_id
+            FROM movie_cast
+            GROUP BY act_id
+            HAVING COUNT(DISTINCT mov_id) > 1
+        )
+        ORDER BY actor.act_lname, actor.act_fname, movie.mov_title;
+
+                        </code>
+                    </pre>
+                </div>
+
+                
+
+                <div class="col-12 col-xl-6 ">
+                    <span class="textblock explanation">
+                        The query starts by selecting specific columns from several tables using the SELECT statement. The actor.act_fname and actor.act_lname columns are selected from the actor table, while the movie.mov_title, reviewer.rev_name, and rating.rev_stars columns are selected from the movie, reviewer, and rating tables respectively.
+                        These tables are joined together using the JOIN statement, with the actor table joined to the movie_cast table, the movie_cast table joined to the movie table, the movie table joined to the rating table, and the rating table joined to the reviewer table.
+                    </span>
+                    <span class="textblock explanation">
+                        The WHERE statement is used to filter the results to only include actors who have appeared in more than one movie.
+                        This is done using a subquery that returns all act_id values from the movie_cast table that appear more than once in the table (i.e., actors who have appeared in more than one movie).
+                        The act_id values returned by this subquery are used to filter the results from the main query.
+                    </span>
+                    <span class="textblock explanation">
+                        Finally, the results are ordered by actor last name, first name, and movie title using the ORDER BY statement.
+                    </span>
+                </div>
+                <div class="container">
+                    <table class="SQL-Challenge">
+                        <thead>
+                            <tr>
+                                <th>Actor First Name</th>
+                                <th>Actor Last Name</th>
+                                <th>Movie Title</th>
+                                <th>Reviewer Name</th>
+                                <th>Reviewer Star Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Kevin</td>
+                                <td>Spacey</td>
+                                <td>American Beauty</td>
+                                <td>Sasha Goldshtein</td>
+                                <td>7.00</td>
+                            </tr>
+                            <tr>
+                                <td>Kevin</td>
+                                <td>Spacey</td>
+                                <td>Beyond The Sea</td>
+                                <td>Richard Adams</td>
+                                <td>6.70</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

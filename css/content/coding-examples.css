@@ -1,3 +1,13 @@
+iframe {
+  height: 95%;
+  overflow: hidden !important;
+  overflow-x: hidden; }
+
+.screenshot {
+  margin: 20px 0;
+  width: 100%;
+  height: auto; }
+
 .project-1-examples {
   display: block; }
   .project-1-examples .navlink {
@@ -11,10 +21,6 @@
     padding: 0px !important; }
   .project-1-examples .nav-item {
     border: 5px solid red; }
-  .project-1-examples .screenshot {
-    margin: 20px 0;
-    width: 100%;
-    height: auto; }
   .project-1-examples p {
     font-size: 1.0rem;
     line-height: 1.5;
@@ -32,16 +38,46 @@
     color: #555;
     margin-top: 1rem; }
   @media screen and (min-width: 992px) {
-    .project-1-examples pre, .project-1-examples code {
+    .project-1-examples pre,
+    .project-1-examples code {
       color: blue;
       margin: 0;
       padding: 0 0 0 10px;
       font-size: 1rem;
       float: left; }
-      .project-1-examples pre style, .project-1-examples code style {
+      .project-1-examples pre style,
+      .project-1-examples code style {
         padding: 0 0 0 10px; }
     .project-1-examples .explanation {
       font-size: 1rem;
       padding: 0; } }
+
+.project-3-examples .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .project-3-examples .container .SQL-Challenge table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; }
+  .project-3-examples .container .SQL-Challenge th,
+  .project-3-examples .container .SQL-Challenge td {
+    padding: 10px;
+    width: 20%;
+    text-align: left;
+    border: 1px solid #ddd; }
+  .project-3-examples .container .SQL-Challenge th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    font-size: 18px; }
+  .project-3-examples .container .SQL-Challenge td {
+    font-size: 16px; }
+  .project-3-examples .container .SQL-Challenge tr:nth-child(even) {
+    background-color: #f5f5f5; }
 
 /*# sourceMappingURL=coding-examples.css.map */

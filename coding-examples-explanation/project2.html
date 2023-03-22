@@ -1,0 +1,187 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Junior Web Developer Portfolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Web Developer, Trainee, Available, Hire Me">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+    <link href="../css/application.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+
+    <title>Coding Examples</title>
+</head>
+
+
+<body>
+    <div class="project-2-examples">
+        <img class="screenshot" src="/img/Javascript-array-reflection.png"
+            alt="screenshot of navbar from Javascript Array Reflection.">
+        <div class="code-explanation-container">
+    
+            <h1 class="textblock">
+                The above screenshot is a website used for a Javascript project. This project was meant demonstrate to show my ability to work with APIs, 
+                handle user input and events, and store data in the browser's local storage. They also show my proficiency in JavaScript and web development.
+            </h1>
+            <div class="row">
+                <div class="col-12 col-xl-9">
+                    <pre width="70%">
+                        <code>
+                            <script contenteditable style="display: block; white-space: pre; width: 100%;">
+
+function renderGalleryItem(randomNumber){
+    fetch(`https://source.unsplash.com/collection/${collectionID}/${imageWidth}x${imageHeight}/?sig=${randomNumber}`)
+      .then((response) => {
+        let galleryItem = document.createElement('span');
+        galleryItem.classList.add('gallery-item');
+        let galleryImage = document.createElement('img');
+        galleryImage.classList.add('gallery-image');
+        galleryImage.src = response.url;
+        galleryImage.setAttribute('data-src', response.url);  // add data-src attribute to store the URL
+        galleryImage.alt = 'gallery image';
+        galleryImage.addEventListener('click', () => {
+          galleryItem.classList.toggle('selected');
+          if (selectedImages.includes(galleryImage.src)) {
+            selectedImages = selectedImages.filter(item => item !== galleryImage.src);
+          } else {
+            selectedImages.push(galleryImage.src);
+          }
+        });
+        galleryItem.appendChild(galleryImage);
+        galleryContainer.append(galleryItem);
+        console.log('image URL:', response.url);
+    });
+}
+  
+
+
+for(let i = 0; i < numItemsToGenerate; i++){
+    let randomImageIndex;
+    do {
+        randomImageIndex = Math.floor(Math.random() * numImagesAvailable);
+    } while (usedRandomNumbers.includes(randomImageIndex));
+    
+    usedRandomNumbers.push(randomImageIndex);
+    renderGalleryItem(randomImageIndex);
+}
+
+
+//email submit
+
+function submitForm(event) {
+    event.preventDefault();
+    const email = document.getElementById('emailInput').value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const selectedElements = document.querySelectorAll('.selected');
+    const imageUrls = [];
+    for (let i = 0; i < selectedElements.length; i++) {
+      let child = selectedElements[i].firstChild;
+      const selectedImageUrl = child.getAttribute('data-src');
+      if (selectedImageUrl) {
+        imageUrls.push(selectedImageUrl);
+      }
+    }
+    if (emailRegex.test(email)) {
+      const data = {
+        'email': email,
+        'imageUrls': imageUrls
+      };
+      localStorage.setItem(email, JSON.stringify(data));
+      console.log(data);
+    } else {
+      const emailError = document.querySelector('#emailError');
+      emailError.style.display = 'block';
+    }
+  }
+  
+
+const emailForm = document.querySelector('#emailForm');
+emailForm.addEventListener('submit', submitForm);
+
+//email request 
+
+function displayImages() {
+    const email = document.getElementById('email-input').value;
+    console.log('email:', email);
+    const selectedImages = getSelectedImages(email);
+    console.log('selectedImages:', selectedImages);
+  
+    if (selectedImages.length > 0) {
+      const imagesContainer = document.getElementById('images-container');
+      console.log('imagesContainer:', imagesContainer);
+      imagesContainer.innerHTML = '';
+  
+      for (let i = 0; i < selectedImages.length; i++) {
+        const img = document.createElement('img');
+        img.src = selectedImages[i];
+        imagesContainer.appendChild(img);
+      }
+    } else {
+      alert('No images found for this email address.');
+    }
+  }
+  
+  
+  function getSelectedImages(email) {
+    const selectedImages = [];
+  
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      const value = JSON.parse(localStorage.getItem(key));
+      console.log('key:', key);
+      console.log('value:', value);
+  
+      if (value.email === email && value.imageUrls.length > 0) {
+        selectedImages.push(...value.imageUrls);
+      }
+    }
+  
+    return selectedImages;
+  }
+  
+  
+
+                            </script>
+                        </code>
+                    </pre>
+                </div>
+    
+                <div class="col-12 col-xl-3 ">
+                    <span class="textblock explanation">
+                        The renderGalleryItem function: This function fetches a random image from the Unsplash API and renders it as a new gallery item with an image element.
+                        It also adds an event listener to toggle the selected class and add or remove the selected image URL to/from the selectedImages array.
+                    </span>
+                    <br>
+                    <span class="textblock explanation">
+                        The submitForm function: This function handles the form submission event, retrieves the email input and selected images from the gallery,
+                        validates the email input, and stores the email and selected image URLs in the browser's local storage.
+                    </span>
+                    <br>
+                    <span class="textblock explanation">
+                        The getSelectedImages function: This function retrieves the selected image URLs from the browser's local storage based on the email address entered by the user.
+                    </span>
+                    <br>
+                    <span class="textblock explanation">
+                        The event listener for the form submission: This event listener calls the submitForm function when the user submits the form.
+                    </span>
+                </div>
+    
+    
+            </div>               
+
+        </div>
+    </div>
+</body>
+
+

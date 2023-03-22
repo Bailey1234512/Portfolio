@@ -1,0 +1,308 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Junior Web Developer Portfolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Web Developer, Trainee, Available, Hire Me">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+    <link href="../css/application.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+
+    <title>Coding Examples</title>
+</head>
+
+
+<body>
+    <div class="project-1-examples">
+        <img class="screenshot" src="/img/netmatters-navbar-screenshot-dropdown-menu-one.png"
+            alt="screenshot of navbar from netmatters page">
+        <div class="code-explanation-container">
+    
+            <h1 class="textblock">
+                Above is a screenshot of the NetMatters clone website from Project 1. In order to create
+                the triangle effect, I used this css code below. You can edit the code below to try
+                different things out with the triangle.
+            </h1>
+            <nav class="navbar navbar-expand-lg d-none d-lg-block" style="margin-bottom: 0px;">
+                <!-- Container wrapper -->
+                <div class="container-fluid container" style="padding: 0px">
+                    <!-- Collapsible wrapper -->
+                    <div class="row collapse navbar-collapse" id="navbarExampleOnHover">
+                        <!-- Left links -->
+                        <ul class="navbar-nav">
+                            <!-- Navbar dropdown -->
+                            <li class="col nav-item position-static">
+    
+                                <a class="navlink" id="navbarDropdown" role="button"
+                                    aria-expanded="false">
+                                    <div class="text-center" style="position: relative;">
+                                        Menu Item 1
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="col nav-item position-static">
+    
+                                <a class="navlink" id="navbarDropdown" role="button"
+                                    data-mdb-toggle="dropdown" aria-expanded="false">
+                                    <div class="text-center" style="position: relative;">
+                                        Menu Item 2
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="col nav-item position-static">
+    
+                                <a class="navlink" id="navbarDropdown" role="button"
+                                    data-mdb-toggle="dropdown" aria-expanded="false">
+                                    <div class="text-center" style="position: relative;">
+                                        Menu Item 3
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="col nav-item  position-static">
+    
+                                <a class="navlink" id="navbarDropdown" role="button"
+                                    data-mdb-toggle="dropdown" aria-expanded="false">
+                                    <div class="text-center" style="position: relative;">
+                                        Menu Item 4
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="col nav-item  position-static">
+    
+                                <a class="navlink" id="navbarDropdown" role="button"
+                                    data-mdb-toggle="dropdown" aria-expanded="false">
+                                    <div class="text-center" style="position: relative;">
+                                        Menu Item 5
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="col nav-item  position-static">
+    
+                                <a class="navlink" id="navbarDropdown" role="button"
+                                    data-mdb-toggle="dropdown" aria-expanded="false">
+                                    <div class="text-center" style="position: relative;">
+                                        Menu Item 6
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="col nav-item  position-static">
+                                <a class="navlink" id="navbarDropdown" role="button"
+                                    data-mdb-toggle="dropdown" aria-expanded="false">
+                                    <div class="text-center" style="position: relative;">
+                                        Menu Item 7
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="triangle-row">
+                <div class="triangle one"></div>
+                <div class="triangle two"></div>
+                <div class="triangle three"></div>
+                <div class="triangle four"></div>
+                <div class="triangle five"></div>
+                <div class="triangle six"></div>
+                <div class="triangle seven"></div>
+            </div>
+    
+            <div class="row">
+                <div class="col-12 col-xl-6">
+                    <pre>
+                        <code>
+                            <style contenteditable style="display: block; white-space: pre; width: 100%;">
+    *{transition: all 0.2s;}
+                
+    .navbar{
+    background-color: #333645;
+    padding: 0;
+    font-size: 23px;
+    border-radius: 0px;
+    border: 0;
+    color: white;
+    
+    }
+    .triangle-row{
+    max-width: 100%;
+    height: 100px;
+    overflow: hidden;
+    }
+    .triangle {
+    position: relative;
+    height: 60px;
+    } 
+    .triangle:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    width: calc(100% / 7);
+    height: 100%;
+    background: #4183d7;
+    clip-path: polygon(50% 70%, 0 0, 100% 0);
+    }
+    .triangle:nth-child(1) {
+    left: calc(0% / 7);
+    }
+    .triangle:nth-child(2) {
+    left: calc(100% / 7);
+    top: -60px;
+    }
+    .triangle:nth-child(3) {
+    left: calc(200% / 7);
+    top: -120px;
+    }
+    .triangle:nth-child(4){
+    left: calc(300% / 7);
+    top: -180px;
+    }
+    .triangle:nth-child(5){
+    left: calc(400% / 7);
+    top: -240px;
+    }
+    .triangle:nth-child(6){
+    left: calc(500% / 7);
+    top: -300px;
+    }
+    .triangle:nth-child(7){
+    left: calc(600% / 7);
+    top: -360px;
+    }
+    
+    /*
+    @media screen and (max-width: 991px) {
+    .triangle {
+    display: none;
+    }
+    }
+    */
+    
+    
+                                </style>
+                            </code>
+                        </pre>
+    
+                </div>
+    
+                <div class="col-12 col-xl-6 ">
+                    <span class="textblock explanation">
+                        The .triangle class is used to position the triangle element under the correct
+                        menu
+                        item on the navbar and gives the triangle the correct dimensions.
+                    </span>
+                    <span class="textblock explanation">
+                        The .triangle:before pseudo-element ensures the triangle's position and
+                        dimensions
+                        and also gives the triangle a background color of #67809f. The clip-path
+                        property is
+                        used to create the shape of the triangle.
+                    </span>
+                    <span class="textblock explanation">
+                        The clip-path: polygon(50% 70%, 0 0, 100% 0); is used to create a triangle shape
+                        using
+                        CSS, the first value is the point where the triangle will be starting, the
+                        second value
+                        is the point where the triangle will end and the third value is the point where
+                        the
+                        triangle will be ending.
+                    </span>
+                    <span class="textblock explanation">
+                        The clip-path property is used to clip an element to a custom shape. It is an
+                        experimental
+                        property which is not yet widely supported in all browsers.
+                    </span>
+                    <span class="textblock explanation">
+                        The position: absolute is used to position the triangle element at the top left
+                        corner
+                        of the parent element and display: block is used to set the display property of
+                        the
+                        element.
+                    </span>
+                    <span class="textblock explanation">
+                        The CSS property left: calc(100% / 7); was used to align all the triangles horizontally by positioning the second triangle at the width of the parent container divided by 7, the first triangle at 0% and the last triangle at the width of the parent container multiplied by 600% divided by 7. 
+                    </span>
+                    <span class="textblock explanation">
+                        The top property of the nth-child selector was used to adjust the vertical position of the triangles in relation to their parent container to ensure they all align horizontally.
+                        If you wanted to change the height of the triangle you would have to change all of the n-th childs top by the height of the triangle multiplied by its position. So if it is the third triangle then it would be 
+                        <br><strong>0-(height * 3)</strong>
+                        Due to time limitations I couldn't find a way during the creation of the nav-bar to make the top calculation automated.
+                        But it could probably be done by instead of changing the height of the triangle you set the height of the triangle to a percentage of the height of the triangle container, which in this case is .triangle-row. So for a 60px contianer you could do height: calc(100%*0.6) to get a height of 60% which would be 60px
+                        I'm not sure how you could then store this value using css and then put that value as the top, but you could do this part with Javascript instead.
+                    </span>
+    
+                    <span class="textblock explanation">
+                        When viewed on a small screen or using the browser's developer tools to reduce the screen size, the triangles may not scale properly. To address this, a media query can be added to remove the triangles when viewed on smaller screens. This is demonstrated in the code block where the media query for removing the triangles on smaller screens is provided in a commented out format.
+                        </span>
+                </div>
+    
+    
+            </div>
+    
+            </p>
+            <h1 class="textblock explanation">
+                You can customize the look and placement of the triangles by adjusting the CSS values. Additionally, you can increase or decrease the number of triangles by modifying the calculation and adding more elements. 
+                <br><br>
+                While this method uses only CSS, using JavaScript can also be an effective approach to simplifying the code.
+                <br><br>
+                In order to activate the Javascript below, please delete all the css above 
+            </h1>
+            <div class="btn-container text-center">
+                <span class="btn" onclick="runJavaScript()">Click me to activate javascript below.</span>
+            </div>
+            
+            <pre>
+                <code>
+    <script contenteditable style="display: block; white-space: pre;">
+    
+    function runJavaScript(){
+    const navbar = document.querySelector('.navbar');
+    navbar.style.backgroundColor = '#333645';
+    navbar.style.padding = '0';
+    navbar.style.fontSize = '23px';
+    navbar.style.borderRadius = '0';
+    navbar.style.border = '0';
+    navbar.style.color = 'white';
+    
+    const triangleRow = document.querySelector('.triangle-row');
+    triangleRow.style.width = '100%';
+    triangleRow.style.height = '100px';
+    
+    const triangle = document.querySelectorAll('.triangle');
+    let height = (triangleRow.offsetHeight * 0.6);
+    triangle.forEach((el, i) => {
+    el.style.position = 'relative';
+    el.style.height = `${height}px`;
+    el.style.width = 'calc(100% / 7)';
+    el.style.left = `calc(${i} * 100% / 7)`;
+    el.style.top = `calc(${i} * -${height}px)`
+    el.style.background = '#4183d7';
+    el.style.clipPath = 'polygon(50% 70%, 0 0, 100% 0)';
+    });
+    }
+    
+    
+    </script>
+                    </code>
+                </pre>
+                
+               
+        </div>
+        
+    </div>
+</body>
+
+
